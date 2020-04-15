@@ -129,7 +129,7 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 
 #watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;line-height: 24px;width: 24px;}
 
-#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: visible;}
+#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: auto;}
 html>body #content { min-height: 600px; }
 * html body #content { height: 600px; } /* IE */
 
@@ -299,7 +299,7 @@ table.list caption { text-align: left; padding: 0.5em 0.5em 0.5em 0; }
 table.list tr.overdue td.due_date  { color: #c22; }
 #role-permissions-trackers table.list th {white-space:normal;}
 
-table.list td.priority {position: relative;font-weight: 500;line-height: 1;}
+table.list td.priority {position: relative;font-weight: 500;line-height: 1rem;}
 table.list td.priority:before {content:"";width: 80%;height: 2em;background-color: rgba(0,0,0,.08);display: inline-block;position: absolute;z-index: 0;margin-top: -.35rem;left: 10%;border-radius: 3px;box-sizing: border-box;}
 
 table.list tr.priority-6 td.priority {color: #660000;font-weight: 500;}
