@@ -436,7 +436,25 @@ table.boards td.last-message {text-align:left;font-size:80%;}
 div.table-list.boards .table-list-cell.name {width: 30%;}
 
 #query_form_content {font-size:90%;}
+#query_form_with_buttons {margin-bottom: 2rem;}
+#query_form_with_buttons .buttons {margin: .3rem 0;display: block;}
+#query_form_with_buttons .buttons a {padding: .3rem .4rem .3rem .2rem;margin-right: 0;text-decoration: none;}
+#query_form_with_buttons .buttons a:before {position: relative;margin: 0;top: .3em;margin-right: .3rem;text-decoration: none;}
 #query_form_with_buttons > p.contextual {font-size:12px; margin:12px 0px;}
+
+#query_form_with_buttons #filters, #query_form_with_buttons #options {
+  position: relative;
+  padding: 0;
+  margin: 0 0 .3rem 0;
+  border: none;
+}
+#query_form_with_buttons #filters > div , #query_form_with_buttons #options > div {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.12);
+  padding: .5rem;
+  position: relative;
+}
 
 .query_sort_criteria_count {
   display: inline-block;
@@ -620,8 +638,8 @@ div.issue.overdue .due-date .value { color: #c22; }
 #trackers_description dt {font-weight: bold; text-decoration: underline;}
 #trackers_description dd {margin: 0; padding: 0 0 1em 0;}
 
-fieldset.collapsible {border-width: 1px 0 0 0;}
-fieldset.collapsible>legend { cursor:pointer; padding-left: 18px; background-position: 4px;}
+fieldset.collapsible {/* border-width: 1px 0 0 0; */}
+fieldset.collapsible>legend {cursor:pointer;padding-left: 18px;background-position: 4px;padding: .3rem .5rem .3rem 1.2rem;font-size: .8rem;font-weight: 500;}
 
 fieldset#date-range p { margin: 2px 0 2px 0; }
 fieldset#filters table { border-collapse: collapse; }
@@ -633,8 +651,8 @@ fieldset#filters td.operator select {max-width:120px;}
 fieldset#filters td.values { white-space:nowrap; }
 fieldset#filters td.values select {min-width:130px;}
 
-#filters-table {width:60%; float:left;}
-.add-filter {width:35%; float:right; text-align: right; vertical-align: top;}
+#filters-table {width:60%;/* float:left; */}
+.add-filter {width:35%;position: absolute;text-align: right;top: .5rem;right: .5rem;}
 
 #all_attributes .icon-edit {
     font-size: .8rem;
@@ -786,6 +804,14 @@ span.project {
     font-variant: all-small-caps;
     margin-left: 0;
     font-weight: 500;
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-variant: normal;
+    font-size: .9em;
+    line-height: 1em;
+    font-weight: 400;
 }
 
 #search-results dd { margin-bottom: 1em; padding-left: 20px; margin-left:0px; }
@@ -946,6 +972,11 @@ span.pagination {margin-left:3px; color:#888; display:block;}
   margin-bottom: 1em;
   white-space: nowrap;
   text-align: center;
+}
+.controller-activities .pagination ul.pages li {
+  border: 2px solid #116699;
+  margin-right: -1px;
+  font-weight: 500;
 }
 .pagination ul.pages li a,
 .pagination ul.pages li span {
