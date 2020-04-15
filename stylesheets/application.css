@@ -47,15 +47,17 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 #top-menu a.logout:hover {color: #f1f1f1;background-color: rgba(255,255,255,.24);}
 #account {float:right;}
 
-#header {min-height: 3rem;margin:0;color: #000;padding: .5rem 1rem 1.7rem;position:relative;background: #fff;}
+#header {/* min-height: 3rem; */margin:0;color: #000;padding: 1rem 1rem 1rem;position:relative;background: #fff;}
 #header a {color: #169;}
-#header h1 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+#header h1 {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 0;}
 #header h1 .breadcrumbs {display:block;font-size: .5em;font-weight: normal;line-height: 1em;}
 
-#quick-search {float:right;}
+.controller-my #header {/* background: transparent; */}
+
+#quick-search {float:right;margin: .2rem 0;}
 #quick-search #q {width:130px; height:24px; box-sizing:border-box; vertical-align:middle; border:1px solid #ccc; border-radius:3px;}
 
-#main-menu {position: absolute;  bottom: 0px;  left:6px; margin-right: -500px; width: 100%;}
+#main-menu {position: relative;left: 0;margin-right: -500px;width: 100%;bottom: -16px;}
 #main-menu ul {margin: 0;  padding: 0; width: 100%; white-space: nowrap;}
 #main-menu li {
   float:none;
@@ -127,7 +129,7 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 
 #watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;line-height: 24px;width: 24px;}
 
-#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: .5rem 1rem;overflow-x: auto;position: relative;}
+#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: visible;}
 html>body #content { min-height: 600px; }
 * html body #content { height: 600px; } /* IE */
 
@@ -499,7 +501,7 @@ div.square {
   width: .6em; height: .6em;
 }
 
-html>body #content > .contextual {/* position: relative; *//* float: right; */padding: .5rem 0;font-size: 1em;display: inline-flex;right: 1rem;}
+html>body #content > .contextual {position: relative;float: right;/* padding: .5rem 0; */font-size: 1em;display: inline-flex;right: 1rem;}
 html>body.controller-projects #content > .contextual > a {margin-left: .5em;margin-right: .5em;}
 html>body.controller-projects #content > .contextual > a.bookmark {background-image: none;}
 html>body #content > .contextual > a {margin-left: 1em;display: inline-flex;align-items: center;text-decoration: none;padding: 0;font-weight: 700;}
@@ -1473,6 +1475,7 @@ div.wiki img {vertical-align:middle; max-width:100%;}
 /***** My page layout *****/
 #my-page {
     overflow: visible;
+    margin-top: 2rem;
 }
 .dragging .ui-sortable-placeholder {
   border:2px dashed #999;
