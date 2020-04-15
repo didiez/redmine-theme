@@ -326,8 +326,8 @@ table.issues td.block_column pre {white-space:normal;}
 
 tr.issue.idnt td.subject, tr.project.idnt td.name {background: url(../images/arrow_right.png) no-repeat 2px 50%;}
 tr.issue.idnt-1 td.subject, tr.project.idnt-1 td.name {padding-left: 2.8rem;background-position: 1.5rem 50%;}
-tr.issue.idnt-2 td.subject, tr.project.idnt-2 td.name {padding-left: 40px; background-position: 24px 50%;}
-tr.issue.idnt-3 td.subject, tr.project.idnt-3 td.name {padding-left: 56px; background-position: 40px 50%;}
+tr.issue.idnt-2 td.subject, tr.project.idnt-2 td.name {padding-left: 3.8rem;background-position: 2.5rem 50%;}
+tr.issue.idnt-3 td.subject, tr.project.idnt-3 td.name {padding-left: 4.8rem;background-position: 3.5rem 50%;}
 tr.issue.idnt-4 td.subject, tr.project.idnt-4 td.name {padding-left: 72px; background-position: 56px 50%;}
 tr.issue.idnt-5 td.subject, tr.project.idnt-5 td.name {padding-left: 88px; background-position: 72px 50%;}
 tr.issue.idnt-6 td.subject, tr.project.idnt-6 td.name {padding-left: 104px; background-position: 88px 50%;}
@@ -644,7 +644,7 @@ fieldset.collapsible>legend {cursor:pointer;padding-left: 18px;background-positi
 fieldset#date-range p { margin: 2px 0 2px 0; }
 fieldset#filters table { border-collapse: collapse; }
 fieldset#filters table td { padding: 0; vertical-align: middle; }
-fieldset#filters tr.filter { height: 2.1em; }
+fieldset#filters tr.filter {height: 2.3em;}
 fieldset#filters td.field { width:230px; }
 fieldset#filters td.operator { width:130px; }
 fieldset#filters td.operator select {max-width:120px;}
@@ -2077,6 +2077,7 @@ input[type=checkbox]:checked::after {
   text-indent: 0px;
 }
 
+.ui-dialog input[type=checkbox]::after {display: none;}
 
 /* ----------------------
 ----- context-menu ------
