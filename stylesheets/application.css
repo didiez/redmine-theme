@@ -50,7 +50,7 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 #header {min-height: 3rem;margin:0;color: #000;padding: .5rem 1rem 1.7rem;position:relative;background: #fff;}
 #header a {color: #169;}
 #header h1 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-#header h1 .breadcrumbs { display:block; font-size: .5em; font-weight: normal; }
+#header h1 .breadcrumbs {display:block;font-size: .5em;font-weight: normal;line-height: 1em;}
 
 #quick-search {float:right;}
 #quick-search #q {width:130px; height:24px; box-sizing:border-box; vertical-align:middle; border:1px solid #ccc; border-radius:3px;}
@@ -241,10 +241,11 @@ div + .drdn-items {border-top:1px solid #ccc;}
 .contextual .drdn-items>a {padding: .4rem .8rem;}
 .contextual .drdn-items>a.icon {padding-left: 2rem;background-image: none;}
 .contextual .drdn-items>a:hover {color:#2A5685;border: none;background-color: #f1f1f1;}
-.contextual .drdn-items>a.icon:before {font-family:"Material Icons";position: absolute;left: .6rem;font-size: 16px;}
+.contextual .drdn-items>a.icon:before {font-family:"Material Icons";position: absolute;left: .6rem;font-size: 16px;margin: 0;}
 .contextual .drdn-items>a.icon-stats:before {content: "bar_chart";}
 .contextual .drdn-items>a.icon-import:before {content: "publish";}
 .contextual .drdn-items>a.icon-settings:before {content:"settings"}
+.contextual .drdn-items>a.icon-lock:before {content: "lock";}
 
 
 #project-jump.drdn {width:200px;display:inline-block;}
@@ -499,7 +500,8 @@ div.square {
 }
 
 html>body #content > .contextual {/* position: relative; *//* float: right; */padding: .5rem 0;font-size: 1em;display: inline-flex;right: 1rem;}
-html>body.controller-projects #content > .contextual a {margin-left: .5em;margin-right: .5em;}
+html>body.controller-projects #content > .contextual > a {margin-left: .5em;margin-right: .5em;}
+html>body.controller-projects #content > .contextual > a.bookmark {background-image: none;}
 html>body #content > .contextual > a {margin-left: 1em;display: inline-flex;align-items: center;text-decoration: none;padding: 0;font-weight: 700;}
 html>body #content > .contextual > a:before {position: relative;margin-right: .2em;font-size: 1.6em;margin: 0 .2em 0 0;font-weight: 500;}
 html>body #content > .contextual a.icon-copy, html>body #content > .contextual a.icon-del {font-weight: 400;}
@@ -565,15 +567,15 @@ textarea.wiki-edit {width:99%; resize:vertical; box-sizing: border-box;}
 body.textarea-monospace textarea.wiki-edit {font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace; font-size: 12px;}
 body.textarea-proportional textarea.wiki-edit {font-family: Verdana, sans-serif; font-size: 12px;}
 li p {margin-top: 0;}
-div.issue {padding: 1em;margin-bottom: 1rem;border: 1px solid #000;border-radius: 5px;background: #fff;padding-bottom: .5em;}
+div.issue {padding: 1em;margin-bottom: 1rem;border: 1px solid #000;border-radius: 5px;background: #fff;padding-bottom: .5em;position: relative;}
 div.issue > * {position: relative;}
 div.issue > hr {margin: 1.5em -1em;box-sizing: content-box;width: 100%;padding: 0 1em;background: none;border-top: 1px dashed #000;height: 0;}
 div.issue #issue-tree {}
 div.issue #relations {}
 div.issue #relations .issues tr {border-top: none;}
 div.issue #relations .issues td {/* padding: .5em; */}
-div.issue > .contextual {position: absolute;right: 1.5rem;z-index: 2;}
-div.issue .description .icon-comment:before {content:"format_quote";font-size: 1.8em;}
+div.issue > .contextual {position: absolute;right: 1rem;z-index: 2;}
+div.issue .description .icon-comment:before {content:"format_quote";font-size: 1.3rem;line-height: 1rem;margin-left: -.3rem;display: inline-block;}
 div.issue .attachments td {display: inline-flex;align-items:center;/* margin-right: .5rem; */}
 div.issue .attachments td > * {margin-right: .5rem}
 div.issue .attachments .icon-download:before {font-size: 16px;width: 24px;height: 24px;display: block;line-height: 24px;text-align: center;margin: 0;}
@@ -1093,7 +1095,7 @@ div.thumbnails div {background:#fff;border:2px solid #ddd;display:inline-block;m
 div.thumbnails img {margin: 3px; vertical-align: middle;}
 #history div.thumbnails {margin-left: 2em;}
 
-p.other-formats { text-align: right; font-size:0.9em; color: #666; }
+p.other-formats {text-align: right;font-size:0.9em;color: #666;margin-top: 3rem;}
 .other-formats span + span:before { content: "| "; }
 
 a.atom { background: url(../images/feed.png) no-repeat 1px 50%; padding: 2px 0px 3px 16px; }
@@ -1281,7 +1283,7 @@ table.progress {
   margin: 1px 6px 1px 0px;
 }
 
-table.progress {width: 100px;/* border: 2px solid #fff; */border-radius: 6px;border-collapse: separate;overflow: hidden;height: 12px;}
+table.progress {width: 140px;/* border: 2px solid #fff; */border-radius: 6px;border-collapse: separate;overflow: hidden;height: 12px;}
 table.progress tr {border: 0;}
 table.progress td {height: 12px;padding: 0;border: 0;}
 table.progress td.closed { background: #BAE0BA none repeat scroll 0%; }
@@ -1764,8 +1766,8 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-bookmark-off { background-image: url(../images/tag_blue_add.png); }
 .icon-sorted-asc { background-image: url(../images/arrow_down.png); }
 .icon-sorted-desc { background-image: url(../images/arrow_up.png); }
-.icon-toggle-plus { background-image: url(../images/bullet_toggle_plus.png) }
-.icon-toggle-minus { background-image: url(../images/bullet_toggle_minus.png) }
+.icon-toggle-plus {background-image: url(../images/bullet_toggle_plus.png);height: 16px;width: 16px;position: relative;top: 5px;left: 2px;}
+.icon-toggle-minus { background-image: url(../images/bullet_toggle_minus.png); height: 16px;width: 16px;position: relative;top: 5px;left: 2px;}
 .icon-clear-query { background-image: url(../images/close_hl.png); }
 .icon-import { background-image: url(../images/database_go.png); }
 
