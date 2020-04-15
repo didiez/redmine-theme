@@ -563,7 +563,7 @@ hr { width: 100%; height: 1px; background: #ccc; border: 0;}
 blockquote { font-style: italic; border-left: 3px solid #e0e0e0; padding-left: 0.6em; margin-left: 0;}
 blockquote blockquote { margin-left: 0;}
 abbr, span.field-description[title] { border-bottom: 1px dotted #aaa; cursor: help; }
-textarea.wiki-edit {width:99%; resize:vertical; box-sizing: border-box;}
+textarea.wiki-edit {width:99%;resize:vertical;box-sizing: border-box;padding: .5rem;margin-bottom: .3rem !important;}
 body.textarea-monospace textarea.wiki-edit {font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace; font-size: 12px;}
 body.textarea-proportional textarea.wiki-edit {font-family: Verdana, sans-serif; font-size: 12px;}
 li p {margin-top: 0;}
@@ -622,6 +622,12 @@ fieldset#filters td.values select {min-width:130px;}
 #filters-table {width:60%; float:left;}
 .add-filter {width:35%; float:right; text-align: right; vertical-align: top;}
 
+#all_attributes .icon-edit {
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+#all_attributes .icon-edit:before {display: none;}
+
 #issue_is_private_wrap {float:right; margin-right:1em;}
 .toggle-multiselect { margin-right:5px; cursor:pointer;}
 .buttons {font-size: 0.9em;margin-bottom: 1.4em;margin-top: 1em;}
@@ -674,7 +680,7 @@ div.journal .contextual .journal-actions:hover {}
 div.journal .contextual .journal-actions:hover a {display: block;}
 div.journal.private-notes .wiki {border-left:2px solid #d22; padding-left:4px; margin-left:-6px;}
 div.journal ul.details, ul.revision-info {margin-bottom: 1.5em;}
-div.journal ul.details a, ul.revision-info a {color:#70A7CD;}
+div.journal ul.details a, ul.revision-info a {color: #169;}
 div.journal ul.details a.icon-download, ul.revision-info a.icon-download {height: 16px;width: 16px;display: inline-block;margin-bottom: -3px;}
 div.journal ul.details a.icon-download:before, ul.revision-info a.icon-download:before {content:"get_app"; font-family:"Material Icons"; font-size: 16px;}
 div.journal ul.details a:hover, ul.revision-info a:hover {color:#D14848;}
@@ -688,6 +694,8 @@ div.journal.changeset > h4 + p {
   width: 100px;
   max-width: 100px;
 }
+div.journal form {margin: 1rem;display: block;}
+div.journal form input[type="submit"] + a {line-height: 1.5rem;display: inline-block;margin-left: .5rem;}
 
 div.journal.changeset > h4 + p > a:first-child {/* font-family: monospace; */}
 
@@ -1024,7 +1032,7 @@ input#months { width: 46px; }
 .jstBlock .jstTabs, .jstBlock .wiki-preview { width: 99%; }
 
 .jstBlock .jstTabs { padding-right: 6px; }
-.jstBlock .wiki-preview { padding: 2px; }
+.jstBlock .wiki-preview {padding: .5rem !important;margin-top: 0 !important;margin-bottom: .5rem !important;}
 .jstBlock .wiki-preview p:first-child { padding-top: 0 !important; margin-top: 0 !important;}
 .jstBlock .wiki-preview p:last-child { padding-bottom: 0 !important; margin-bottom: 0 !important;}
 
@@ -1690,7 +1698,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 }
 
 .icon-add:before {font-family:"Material Icons";content:"add_circle_outline";font-size: 1.5em;position: absolute;margin-left: -1.1em;}
-.icon-edit:before {font-family:"Material Icons";content:"edit";font-size: 1.5em;position: absolute;margin-left: -1.1em;}
+.icon-edit:before {font-family:"Material Icons";content:"edit";font-size: 1.5em;position: absolute;margin-left: -1.1em;text-align: center;height: 20px;}
 .icon-copy:before {font-family:"Material Icons";content: "file_copy";font-size: 1.4em;position: absolute;margin-left: -1.2em;}
 .icon-duplicate { background-image: url(../images/duplicate.png); }
 .icon-del:before  {font-family:"Material Icons";content:"delete";font-size: 1.6em;position: absolute;margin-left: -1.1em;}
