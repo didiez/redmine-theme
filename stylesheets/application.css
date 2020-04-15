@@ -125,7 +125,7 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 #sidebar div.wiki ul li {list-style-type:inherit;}
 #sidebar a.icon-only {opacity: 0.4;margin-left: .3rem;}
 #sidebar a.icon-only:hover {opacity: 1;}
-#sidebar li input[type=checkbox] {height: 20px;}
+#sidebar li input[type=checkbox] {}
 
 #watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;line-height: 24px;width: 24px;}
 
@@ -2066,6 +2066,7 @@ input[type=checkbox]::after {
   outline: none;
   box-sizing: border-box;
   text-align: center;
+  pointer-events: none;
 }
 
 input[type=checkbox]:checked::after {
