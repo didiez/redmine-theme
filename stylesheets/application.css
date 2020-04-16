@@ -1408,6 +1408,7 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
 #content .tabs {/* height: 2.6em; */margin-bottom: 1rem;position:relative;/* overflow:hidden; */font-size: .9rem;display: block;}
 #content .tabs ul {margin:0;/* position:absolute; */bottom:0;padding-left:0.5em;width: 2000px;/* border-bottom: 1px solid #bbbbbb; */display: flex;}
 #content .tabs ul li {
+  height: unset !important;
   /* float:left; */
   list-style-type:none;
   white-space:nowrap;
@@ -1441,6 +1442,7 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
   color: #000;
   border-color: #000;
 }
+#content .jstTabs.tabs ul li a {border-bottom: 3px solid transparent;}
 #content .jstTabs.tabs ul li a.selected {border-color: #000;}
 #content .tabs ul li a.selected:hover {color: #000; border-color: #000;}
 #content .tabs ul li a:hover {border-color: #444;color: #444;}
