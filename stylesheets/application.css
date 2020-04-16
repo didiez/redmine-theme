@@ -1447,6 +1447,10 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
 #content .tabs ul li a.selected:hover {color: #000; border-color: #000;}
 #content .tabs ul li a:hover {border-color: #444;color: #444;}
 
+#content #history .tabs a {
+    padding: .4rem .6rem;
+}
+
 div.tabs-buttons { position:absolute; right: 0; width: 54px; height: 24px; background: white; bottom: 0; border-bottom: 1px solid #bbbbbb; }
 
 button.tab-left, button.tab-right {
