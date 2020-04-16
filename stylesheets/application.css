@@ -123,11 +123,11 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 #sidebar ul li, ul.flat li {list-style-type:none;margin: 0px 2px 0px 0px;padding: 0px 0px 0px 0px;display: flex;align-items: center;line-height: 24px;}
 #sidebar div.wiki ul {margin:inherit; padding-left:40px;}
 #sidebar div.wiki ul li {list-style-type:inherit;}
-#sidebar a.icon-only {opacity: 0.4;margin-left: .3rem;}
+#sidebar a.icon-only {opacity: 0.4;margin-left: .3rem;line-height: 24px;display: inline-block;}
 #sidebar a.icon-only:hover {opacity: 1;}
 #sidebar li input[type=checkbox] {}
 
-#watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;line-height: 24px;width: 24px;}
+#watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;line-height: 24px;width: 24px;margin: 0;}
 
 #content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: auto;}
 html>body #content { min-height: 600px; }
@@ -628,7 +628,7 @@ select[multiple=multiple] {background: #fff; padding-right: initial; height: aut
 fieldset {border: 1px solid #e4e4e4; margin:0; min-width: inherit;}
 legend {color: #333;position: relative;}
 hr { width: 100%; height: 1px; background: #ccc; border: 0;}
-blockquote { font-style: italic; border-left: 3px solid #e0e0e0; padding-left: 0.6em; margin-left: 0;}
+blockquote {position: relative;font-style: italic;padding-left: 1em;margin-left: 0.5em;border-left: 3px solid #ccc;overflow: auto;}
 blockquote blockquote { margin-left: 0;}
 abbr, span.field-description[title] { border-bottom: 1px dotted #aaa; cursor: help; }
 textarea.wiki-edit {width:99%;resize:vertical;box-sizing: border-box;padding: .5rem;margin-bottom: .3rem !important;}
@@ -638,6 +638,7 @@ li p {margin-top: 0;}
 div.issue {padding: 1em;margin-bottom: 1rem;border: 1px solid #000;border-radius: 5px;background: #fff;padding-bottom: .5em;position: relative;}
 div.issue > * {position: relative;}
 div.issue > hr {margin: 1.5em -1em;box-sizing: content-box;width: 100%;padding: 0 1em;background: none;border-top: 1px dashed #000;height: 0;}
+div.issue .description .wiki {line-height: 1.5;}
 div.issue #issue-tree {}
 div.issue #relations {}
 div.issue #relations .issues tr {border-top: none;}
@@ -784,7 +785,7 @@ div.journal img.gravatar {box-shadow: none; border: none;}
 div.journal ul.details {border-radius: 3px;margin: 0 0 1rem 1rem;padding: .5rem .6rem;margin-left: 1rem;list-style: none;width: fit-content;background: #f1f1f1;}
 div.journal ul.details li {line-height: 1.4;}
 div.journal ul.details li > * {}
-div.journal div.wiki {padding: 0 1rem 1rem;/* position: relative; */overflow: visible;margin-top: 1rem;padding-right: 3rem;}
+div.journal div.wiki {padding: 0 1rem 1rem;/* position: relative; */overflow: visible;margin-top: 1rem;padding-right: 3rem;line-height: 1.5;}
 div.journal div.wiki .contextual {top: 2.5rem;right: 2em;width: 1rem;white-space: normal;}
 div.journal div.wiki .contextual a {
     display: block;
@@ -983,7 +984,8 @@ ul.properties li span {font-style:italic;}
 .total-hours { font-size: 110%; font-weight: bold; }
 .total-hours span.hours-int { font-size: 120%; }
 
-.autoscroll {overflow-x: auto; padding:1px; margin-bottom: 1.2em; position: relative;}
+.autoscroll {overflow-x: auto;padding:1px;margin-bottom: 1rem;position: relative;}
+.autoscroll table:last-child {margin-bottom: 0;}
 #user_login, #user_firstname, #user_lastname, #user_mail, #my_account_form select, #user_form select, #user_identity_url { width: 90%; }
 
 #workflow_copy_form select { width: 200px; }
@@ -1004,17 +1006,21 @@ span.pagination {margin-left:3px; color:#888; display:block;}
 .pagination ul.pages {
   margin: 0 5px 0 0;
   padding: 0;
-  display: inline;
+  display: inline-flex;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  border-radius: 5px;
 }
 .pagination ul.pages li {
-  display: inline-block;
+  display: inline-flex;
   padding: 0;
-  border: 1px solid #ddd;
+  border: none;
   margin-left: -1px;
-  line-height: 2em;
-  margin-bottom: 1em;
+  /* line-height: 2em; */
+  margin-bottom: 0;
   white-space: nowrap;
   text-align: center;
+  font-weight: 500;
+  background-color: #fff;
 }
 .controller-activities .pagination ul.pages li {
   border: 2px solid #116699;
@@ -1023,11 +1029,11 @@ span.pagination {margin-left:3px; color:#888; display:block;}
 }
 .pagination ul.pages li a,
 .pagination ul.pages li span {
-  padding: 3px 8px;
+  padding: .525rem .8rem;
 }
 .pagination ul.pages li:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .pagination ul.pages li:last-child {
   border-top-right-radius: 4px;
@@ -1039,7 +1045,7 @@ span.pagination {margin-left:3px; color:#888; display:block;}
   border-color: #628DB6;
 }
 .pagination ul.pages li.page:hover {
-  background-color: #ddd;
+  background-color: #f1f1f1;
 }
 .pagination ul.pages li.page a:hover,
 .pagination ul.pages li.page a:active {
@@ -1049,7 +1055,7 @@ span.pagination {margin-left:3px; color:#888; display:block;}
 .pagination .per-page span.selected {
   font-weight: bold;
 }
-span.pagination>span {white-space:nowrap;}
+span.pagination>span {white-space:nowrap;display: inline-block;padding: .525rem;}
 .controller-attachments.action-show span.pagination{
   display: block;
   margin-top: 1.2em;
@@ -1579,6 +1585,7 @@ div.wiki img {vertical-align:middle; max-width:100%;}
   color:#505050;
   border-radius: 3px;
   position: relative;
+  margin-top: 2rem;
 }
 
 .mypage-box>.contextual {opacity: 0.001;transition: opacity 0.2s;display: inline-flex;}
