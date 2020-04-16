@@ -127,7 +127,7 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 #sidebar a.icon-only:hover {opacity: 1;}
 #sidebar li input[type=checkbox] {}
 
-#watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;line-height: 24px;width: 24px;margin: 0;}
+#watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;width: 24px;margin: 0;}
 
 #content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: auto;}
 html>body #content { min-height: 600px; }
@@ -760,8 +760,10 @@ body.avatars-on div.journal h4 {padding-left: 3rem;}
 body.avatars-on div.journal h4 img.gravatar {margin-right: .5rem;position: absolute;margin-left: -2.4rem;margin-top: -2px;}
 div.journal h4 img.gravatar {margin-left: 0;}
 div.journal > div {border-radius: 5px; overflow: hidden;}
+div.journal.changeset {line-height: 1.5;}
 div.journal.changeset > h4 + p {
-  padding: 0 1rem;
+  padding: 1rem;
+  margin: 0;
   width: 100px;
   max-width: 100px;
 }
@@ -1403,8 +1405,8 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
 .version-overview table.progress td { height: 1.2em; }
 
 /***** Tabs *****/
-#content .tabs {height: 2.6em; margin-bottom:1.2em; position:relative; overflow:hidden;}
-#content .tabs ul {margin:0; position:absolute; bottom:0; padding-left:0.5em; width: 2000px; border-bottom: 1px solid #bbbbbb;}
+#content .tabs {/* height: 2.6em; */margin-bottom: 1rem;position:relative;/* overflow:hidden; */font-size: .9rem;display: block;}
+#content .tabs ul {margin:0;/* position:absolute; */bottom:0;padding-left:0.5em;width: 2000px;/* border-bottom: 1px solid #bbbbbb; */display: flex;}
 #content .tabs ul li {
   float:left;
   list-style-type:none;
@@ -1417,14 +1419,14 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
   display:block;
   font-size: 0.9em;
   text-decoration:none;
-  line-height:1.3em;
-  padding:4px 6px 4px 6px;
-  border: 1px solid #ccc;
-  border-bottom: 1px solid #bbbbbb;
-  color:#999;
+  line-height: 1em;
+  padding: .4rem;
+  /* border: 1px solid #ccc; */
+  /* border-bottom: 1px solid #bbbbbb; */
+  color: #777;
   font-weight:bold;
-  border-top-left-radius:3px;
-  border-top-right-radius:3px;
+  border-bottom: 3px solid transparent;
+  margin: 0;
 }
 
 #content .tabs ul li a:hover {
@@ -1433,13 +1435,14 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
 }
 
 #content .tabs ul li a.selected {
-  background-color: #fff;
-  border: 1px solid #bbbbbb;
-  border-bottom: 1px solid #fff;
-  color:#444;
+  /* background-color: #fff; */
+  /* border: 1px solid #bbbbbb; */
+  /* border-bottom: 1px solid #fff; */
+  color: #000;
+  border-color: #000;
 }
-
-#content .tabs ul li a.selected:hover {background-color: #fff;}
+#content .tabs ul li a.selected:hover {color: #000; border-color: #000;}
+#content .tabs ul li a:hover {border-color: #444;color: #444;}
 
 div.tabs-buttons { position:absolute; right: 0; width: 54px; height: 24px; background: white; bottom: 0; border-bottom: 1px solid #bbbbbb; }
 
