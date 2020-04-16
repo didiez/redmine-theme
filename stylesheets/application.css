@@ -1408,19 +1408,19 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
 #content .tabs {/* height: 2.6em; */margin-bottom: 1rem;position:relative;/* overflow:hidden; */font-size: .9rem;display: block;}
 #content .tabs ul {margin:0;/* position:absolute; */bottom:0;padding-left:0.5em;width: 2000px;/* border-bottom: 1px solid #bbbbbb; */display: flex;}
 #content .tabs ul li {
-  float:left;
+  /* float:left; */
   list-style-type:none;
   white-space:nowrap;
   margin-right:4px;
   position:relative;
-  margin-bottom:-1px;
+  /* margin-bottom:-1px; */
 }
 #content .tabs ul li a{
   display:block;
   font-size: 0.9em;
   text-decoration:none;
   line-height: 1em;
-  padding: .4rem;
+  padding: .2rem .4rem .4rem .4rem;
   /* border: 1px solid #ccc; */
   /* border-bottom: 1px solid #bbbbbb; */
   color: #777;
@@ -1441,6 +1441,7 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
   color: #000;
   border-color: #000;
 }
+#content .jstTabs.tabs ul li a.selected {border-color: #000;}
 #content .tabs ul li a.selected:hover {color: #000; border-color: #000;}
 #content .tabs ul li a:hover {border-color: #444;color: #444;}
 
