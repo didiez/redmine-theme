@@ -438,10 +438,12 @@ div.table-list.boards .table-list-cell.name {width: 30%;}
 #query_form_content {font-size:90%;}
 #query_form_content td.field {width: 200px;max-width: 200px;padding: 0;}
 #query_form_with_buttons {margin-bottom: 2rem;background: #fff;padding: .5rem;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);border-radius: 5px;}
-#query_form_with_buttons .buttons {margin: 0;display: flex;align-items: center;}
+#query_form_with_buttons .buttons {margin: 0;display: flex;align-items: center;z-index: 0;position: relative;}
 #query_form_with_buttons .buttons a {padding: .5rem;margin-right: 0;text-decoration: none;font-size: .8rem;display: inline-flex;line-height: 1em;/* align-items: center; */margin-right: .3rem;}
 #query_form_with_buttons .buttons a:before {position: relative;margin: 0;top: 0;margin-right: .3rem;text-decoration: none;}
 #query_form_with_buttons > p.contextual {font-size:12px; margin:12px 0px;}
+#query_form_content fieldset.collapsible.collapsed + fieldset.collapsible.collapsed {margin-bottom: -1.8rem !important;background: #fff !important;z-index: 1;}
+#query_form_content fieldset.collapsible.collapsed + fieldset.collapsible.collapsed:after {display: none !important;}
 
 #query_form_with_buttons #filters, #query_form_with_buttons #options {
   position: relative;
@@ -678,7 +680,8 @@ div.issue.overdue .due-date .value { color: #c22; }
 fieldset.collapsible {/* border-width: 1px 0 0 0; */}
 fieldset.collapsible > div {display: flex !important;}
 fieldset.collapsible.collapsed > div {display: none !important;}
-fieldset.collapsible>legend {cursor:pointer;padding-left: 18px;background-position: 4px;padding: .3rem .5rem .3rem 1.5rem;font-size: .8rem;font-weight: 500;display: block;position: relative;}
+fieldset.collapsible.collapsed > legend {width: 100%;box-sizing: border-box;}
+fieldset.collapsible>legend {cursor:pointer;padding-left: 18px;background-position: 4px;padding: .3rem .5rem .3rem 1.5rem;font-size: .8rem;font-weight: 500;display: block;position: relative;background-color: #fff;}
 
 fieldset#date-range p { margin: 2px 0 2px 0; }
 fieldset#filters table { border-collapse: collapse; }
