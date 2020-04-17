@@ -635,6 +635,8 @@ legend {color: #333;position: relative;}
 hr { width: 100%; height: 1px; background: #ccc; border: 0;}
 blockquote {position: relative;font-style: italic;padding-left: 1em;margin-left: 0.5em;border-left: 3px solid #ccc;overflow: auto;}
 blockquote blockquote { margin-left: 0;}
+blockquote > *:first-child { margin-top: .5rem}
+blockquote > *:last-child { margin-bottom: .5rem}
 abbr, span.field-description[title] { border-bottom: 1px dotted #aaa; cursor: help; }
 textarea.wiki-edit {width:99%;resize:vertical;box-sizing: border-box;padding: .5rem;margin-bottom: .3rem !important;}
 body.textarea-monospace textarea.wiki-edit {font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace; font-size: 12px;}
@@ -762,7 +764,7 @@ div.journal ul.details a.icon-download, ul.revision-info a.icon-download {height
 div.journal ul.details a.icon-download:before, ul.revision-info a.icon-download:before {content:"get_app"; font-family:"Material Icons"; font-size: 16px;}
 div.journal ul.details a:hover, ul.revision-info a:hover {color:#D14848;}
 body.avatars-on div.journal {padding-left: 0;}
-body.avatars-on div.journal h4 {padding-left: 3rem;}
+body.avatars-on div.journal h4 {padding-left: 3rem; width: 9rem;}
 body.avatars-on div.journal h4 img.gravatar {margin-right: .5rem;position: absolute;margin-left: -2.4rem;margin-top: -2px;}
 div.journal h4 img.gravatar {margin-left: 0;}
 div.journal > div {border-radius: 5px; overflow: hidden;}
@@ -786,7 +788,7 @@ div.journal.private-notes {border-left:2px solid #d22; padding-left:4px; margin-
 div.journal > div > h4, div.journal.changeset > h4 {border-bottom: none;font-size: 0;padding: 1rem 1rem 0 .8rem;margin-bottom: 1rem;position: relative;height: 2rem;display: flex;flex-direction: column;white-space: nowrap;}
 div.journal > div > h4 > a,  div.journal.changeset > h4 > a {font-size: .8rem;/* margin-right: .5rem; */width: fit-content;}
 div.journal > div > h4 > a:last-of-type,  div.journal.changeset > h4 > a:last-of-type {/* position: absolute; *//* left: 3.2rem; *//* top: 2rem; *//* font-weight: normal; *//* font-size: .8rem; */font-size: .7rem;}
-
+div.journal > div > h4 > a:last-of-type, div.journal.changeset > h4 > a:last-of-type:before {content:"hace "}
 div.journal > div > h4 > a:last-of-type:before {content: "hace ";}
 div.journal > div > h4 > a.journal-link {font-family: "Roboto Mono";font-size: .9rem;margin-right: 0.2em;font-weight: 700;/* font-size: 16px; */}
 div.journal img.gravatar {box-shadow: none; border: none;}
