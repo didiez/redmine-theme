@@ -290,7 +290,7 @@ table.list td.buttons a, div.buttons a {
     margin-right: 0.8rem;
     display: inline-block;
 }
-table.list td.buttons a {margin-top: .1rem;margin-bottom: -.2rem;}
+table.list td.buttons a {margin-top: 0rem;margin-bottom: -.2rem;}
 table.list td.buttons a.icon-link-break {background-image: none;padding: 0;display: inline-block;}
 table.list td.buttons a.icon-link-break:before {content: "delete";font-family:"Material Icons";font-size: 20px;line-height: 24px;text-align: center;display: block;}
 table.list td.buttons a:last-child, div.buttons a:last-child {margin-right: 0 !important;}
@@ -391,6 +391,7 @@ tr.version td.date, tr.version td.status, tr.version td.sharing { text-align: ce
 tr.member td.icon-user, #principals_for_new_member .icon-user {background:transparent;}
 
 tr.user td {width:13%;white-space: nowrap;}
+tr.user td > a {padding: 0.3125rem;display: inline-block;}
 td.username, td.firstname, td.lastname, td.email {text-align:left !important;}
 tr.user td.email { width:18%; }
 tr.user.locked, tr.user.registered { color: #aaa; }
@@ -558,7 +559,7 @@ input:disabled, select:disabled, textarea:disabled {
 }
 
 .box{
-  padding:6px;
+  /* padding:6px; */
   margin-bottom: 10px;
   color:#505050;
   line-height:1.5em;
@@ -639,8 +640,8 @@ legend {color: #333;position: relative;}
 hr { width: 100%; height: 1px; background: #ccc; border: 0;}
 blockquote {position: relative;font-style: italic;padding-left: 1em;margin-left: 0.5em;border-left: 3px solid #ccc;overflow: auto;}
 blockquote blockquote { margin-left: 0;}
-blockquote > *:first-child { margin-top: .5rem}
-blockquote > *:last-child { margin-bottom: .5rem}
+blockquote > *:first-child {margin-top: .5rem !important;}
+blockquote > *:last-child {margin-bottom: .5rem !important;}
 abbr, span.field-description[title] { border-bottom: 1px dotted #aaa; cursor: help; }
 textarea.wiki-edit {width:99%;resize:vertical;box-sizing: border-box;padding: .5rem;margin-bottom: .3rem !important;}
 body.textarea-monospace textarea.wiki-edit {font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace; font-size: 12px;}
@@ -1081,7 +1082,7 @@ span.pagination>span {white-space:nowrap;display: inline-block;padding: .525rem;
 .tabular p{
   margin: 0;
   padding: 3px 0 3px 0;
-  padding-left: 180px; /* width of left column containing the label elements */
+  padding-left: 135px; /* width of left column containing the label elements */
   min-height: 2em;
   clear:left;
 }
@@ -1095,11 +1096,13 @@ html>body .tabular p {overflow:hidden;}
   float: left;
   text-align: right;
   /* width of left column */
-  margin-left: -180px;
+  margin-left: -135px;
   /* width of labels. Should be smaller than left column to create some right margin */
-  width: 175px;
+  width: 125px;
   line-height: 24px;
 }
+
+.tabular label[for="issue_description"], #issue_description_and_toolbar {margin-top: .2rem; display: block;}
 
 .tabular label.floating{
   font-weight: normal;
@@ -1141,8 +1144,8 @@ input#months { width: 46px; }
 
 .jstBlock .jstTabs { padding-right: 6px; }
 .jstBlock .wiki-preview {padding: .5rem !important;margin-top: 0 !important;margin-bottom: .5rem !important;}
-.jstBlock .wiki-preview p:first-child { padding-top: 0 !important; margin-top: 0 !important;}
-.jstBlock .wiki-preview p:last-child { padding-bottom: 0 !important; margin-bottom: 0 !important;}
+.jstBlock .wiki-preview > p:first-child { padding-top: 0 !important; margin-top: 0 !important;}
+.jstBlock .wiki-preview > p:last-child { padding-bottom: 0 !important; margin-bottom: 0 !important;}
 
 .tabular .wiki-preview, .tabular .jstTabs {width: 95%;}
 .tabular.settings .wiki-preview, .tabular.settings .jstTabs { width: 99%; }
@@ -1432,7 +1435,7 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
   display:block;
   font-size: 0.9em;
   text-decoration:none;
-  line-height: 1em;
+  line-height: 1.5em;
   padding: .2rem .4rem .2rem .4rem;
   /* border: 1px solid #ccc; */
   /* border-bottom: 1px solid #bbbbbb; */
@@ -1459,7 +1462,7 @@ p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
 #content .tabs ul li a.selected:hover {color: #000; border-color: #000;}
 #content .tabs ul li a:hover {border-color: #444;color: #444;}
 
-#content #history .tabs a {
+#content #history > .tabs a {
     padding: .4rem .6rem;
 }
 
@@ -1823,7 +1826,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
   content: "&nbsp;";
 }
 
-.icon-add:before {font-family:"Material Icons";content:"add_circle_outline";font-size: 1.5em;position: absolute;margin-left: -1.1em;}
+.icon-add:before {font-family:"Material Icons";content:"add_circle_outline";font-size: 1.5em;position: absolute;margin-left: -1.1em;margin-top: -.2em;}
 .icon-edit:before {font-family:"Material Icons";content:"edit";font-size: 1.5em;position: absolute;margin-left: -1.1em;text-align: center;height: 20px;margin-top: -3px;}
 .icon-copy:before {font-family:"Material Icons";content: "file_copy";font-size: 1.4em;position: absolute;margin-left: -1.2em;margin-top: -0.1em;}
 .icon-duplicate { background-image: url(../images/duplicate.png); }
@@ -2125,7 +2128,7 @@ img {
 }
 
 input[type=checkbox] + label {margin-left: .5em;}
-input[type=checkbox]{font-size: 1rem;padding: 0;display: inline-flex;width: 18px;height: 18px;margin: 0;position: relative;}
+input[type=checkbox]{font-size: 1rem;padding: 0;display: inline-block;width: 18px;height: 18px;margin: 0px;position: relative;}
 input[type=checkbox]::after {
   content: '';
   display: block;
@@ -2134,23 +2137,25 @@ input[type=checkbox]::after {
   border: 1px solid grey;
   background-color: #fff;
   border-radius: 2px;
-  font-family: "Material Icons";
   font-weight: 700;
   outline: none;
   box-sizing: border-box;
   text-align: center;
   pointer-events: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
-
+input[type=checkbox]:checked {}
 input[type=checkbox]:checked::after {
-  content: 'done';
   font-size: 16px;
   line-height: 17px;
   color: #000;
-  text-indent: 0px;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgaGVpZ2h0PSIyNCIKICAgdmlld0JveD0iMCAwIDI0IDI0IgogICB3aWR0aD0iMjQiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzQiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImNoZWNrLXN0cm9uZy5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjAuOTIuNCAoZmQ1Nzg2MywgMjAyMC0wNC0wMikiPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTEwIj4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZGVmcwogICAgIGlkPSJkZWZzOCIgLz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEiCiAgICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIKICAgICBncmlkdG9sZXJhbmNlPSIxMCIKICAgICBndWlkZXRvbGVyYW5jZT0iMTAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE4NjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTAyOSIKICAgICBpZD0ibmFtZWR2aWV3NiIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6em9vbT0iOS44MzMzMzMzIgogICAgIGlua3NjYXBlOmN4PSItNi4xNTI1NDI0IgogICAgIGlua3NjYXBlOmN5PSIxMiIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iNTQiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjI3IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnNCIgLz4KICA8cGF0aAogICAgIGQ9Ik0yMSw3TDksMTlMMy41LDEzLjVMNC45MSwxMi4wOUw5LDE2LjE3TDE5LjU5LDUuNTlMMjEsN1oiCiAgICAgaWQ9InBhdGgyIgogICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyIiAvPgo8L3N2Zz4K");
+  background-size: 100%;
 }
 
-.ui-dialog input[type=checkbox]::after {display: none;}
+/*.ui-dialog input[type=checkbox]::after {display: none;}*/
 
 /* ----------------------
 ----- context-menu ------
