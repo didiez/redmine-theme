@@ -643,7 +643,7 @@ blockquote blockquote { margin-left: 0;}
 blockquote > *:first-child {margin-top: .5rem !important;}
 blockquote > *:last-child {margin-bottom: .5rem !important;}
 abbr, span.field-description[title] { border-bottom: 1px dotted #aaa; cursor: help; }
-textarea.wiki-edit {width:99%;resize:vertical;box-sizing: border-box;padding: .5rem;margin-bottom: .3rem !important;}
+textarea.wiki-edit {width: 100%;resize:vertical;box-sizing: border-box;padding: .5rem;margin-bottom: .3rem !important;}
 body.textarea-monospace textarea.wiki-edit {font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace; font-size: 12px;}
 body.textarea-proportional textarea.wiki-edit {font-family: Verdana, sans-serif; font-size: 12px;}
 li p {margin-top: 0;}
@@ -958,7 +958,7 @@ ul.projects div.description li {list-style-type:initial;}
   column-width: unset;
   column-count: unset;
 }
-#projects-index li.root ul.projects { border-left: 3px solid #e0e0e0; padding-left:1em;}
+#projects-index li.root ul.projects {border-left: 2px solid #000;padding-left: .6rem;margin-left: .6rem;background-color: inherit;}
 #projects-index ul.projects li.root {
   margin-bottom: 1em;
   padding: 1rem;
@@ -977,10 +977,27 @@ ul.projects div.description li {list-style-type:initial;}
   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 #projects-index ul.projects li.root .wiki:last-child p {margin-bottom: 0;}
-#projects-index ul.projects li.child {margin-top: 1em;}
-#projects-index ul.projects div.root a.project { font-family: "Trebuchet MS", Verdana, sans-serif; font-weight: bold; font-size: 16px; margin: 0 0 10px 0; }
+#projects-index ul.projects li.child {margin-top: 1em;position: relative;background-color: inherit;}
+#projects-index ul.projects li.child div.child {background-color: inherit;}
+#projects-index ul.projects li.child:last-child:before {content:"";width: 4px;height: calc(100% - 13px);display: block;background-color: inherit;position: absolute;left: -.8rem;top: 13px;}
+#projects-index ul.projects div.root a.project {font-family: "Trebuchet MS", Verdana, sans-serif;font-weight: bold;font-size: 16px;/* margin: 0 0 10px 0; */}
+#projects-index ul.projects a.project {padding-left: 2rem;position: relative;line-height: 26px;display: inline-block;margin: 0;background-color: inherit;}
+#projects-index ul.projects a.project.parent {margin-bottom: .3rem;}
+#projects-index ul.projects a.project.icon-user {background-image: none;}
+#projects-index ul.projects a.project:before {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLDE4SDRWOEgyME0yMCw2SDEyTDEwLDRINEMyLjg5LDQgMiw0Ljg5IDIsNlYxOEEyLDIgMCAwLDAgNCwyMEgyMEEyLDIgMCAwLDAgMjIsMThWOEMyMiw2Ljg5IDIxLjEsNiAyMCw2WiIvPjwvc3ZnPg==");height: 24px;width: 24px;display: inline-block;position: absolute;left: 0;}
+#projects-index ul.projects a.project.my-project:before {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1IDE0QzE2LjMzIDE0IDE5IDE0LjY3IDE5IDE2VjE3SDExVjE2QzExIDE0LjY3IDEzLjY3IDE0IDE1IDE0TTE1IDEzQzE2LjExIDEzIDE3IDEyLjExIDE3IDExUzE2LjExIDkgMTUgOUMxMy45IDkgMTMgOS44OSAxMyAxMUMxMyAxMi4xMSAxMy45IDEzIDE1IDEzTTIyIDhWMThDMjIgMTkuMTEgMjEuMTEgMjAgMjAgMjBINEMyLjkgMjAgMiAxOS4xMSAyIDE4VjZDMiA0Ljg5IDIuOSA0IDQgNEgxMEwxMiA2SDIwQzIxLjExIDYgMjIgNi45IDIyIDhNMjAgOEg0VjE4SDIwVjhaIi8+PC9zdmc+");height: 24px;width: 24px;display: inline-block;position: absolute;left: 0;}
+
+#projects-index ul.projects a.project.parent:after {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyLDRBMiwyIDAgMCwxIDI0LDZWMTZBMiwyIDAgMCwxIDIyLDE4SDZBMiwyIDAgMCwxIDQsMTZWNEEyLDIgMCAwLDEgNiwySDEyTDE0LDRIMjJNMiw2VjIwSDIwVjIySDJBMiwyIDAgMCwxIDAsMjBWMTFIMFY2SDJNNiw2VjE2SDIyVjZINloiLz48L3N2Zz4=");height: 24px;width: 24px;display: inline-block;position: absolute;left: -2px;top: 2px;background-color: inherit;z-index: 1;}
+
+
+#projects-index ul.projects a.project.parent.my-project:before {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1IDE0QzE2LjMzIDE0IDE5IDE0LjY3IDE5IDE2VjE3SDExVjE2QzExIDE0LjY3IDEzLjY3IDE0IDE1IDE0TTE1IDEzQzE2LjExIDEzIDE3IDEyLjExIDE3IDExUzE2LjExIDkgMTUgOUMxMy45IDkgMTMgOS44OSAxMyAxMUMxMyAxMi4xMSAxMy45IDEzIDE1IDEzTTIyIDhWMThDMjIgMTkuMTEgMjEuMTEgMjAgMjAgMjBINEMyLjkgMjAgMiAxOS4xMSAyIDE4VjZDMiA0Ljg5IDIuOSA0IDQgNEgxMEwxMiA2SDIwQzIxLjExIDYgMjIgNi45IDIyIDhNMjAgOEg0VjE4SDIwVjhaIi8+PC9zdmc+");height: 24px;width: 24px;display: inline-block;position: absolute;left: 0;z-index: 2;}
+#projects-index ul.projects li.child:after {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE5LDEzSDVWMTFIMTlWMTNaIi8+PC9zdmc+");height: 24px;width: 24px;display: inline-block;position: absolute;left: -1rem;top: 0;}
+p > span.my-project {background-image: none;}
+p > span.my-project {padding-left: 2rem;position: relative;line-height: 26px;display: inline-block;margin: 0;}
+p > span.my-project:before  {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1IDE0QzE2LjMzIDE0IDE5IDE0LjY3IDE5IDE2VjE3SDExVjE2QzExIDE0LjY3IDEzLjY3IDE0IDE1IDE0TTE1IDEzQzE2LjExIDEzIDE3IDEyLjExIDE3IDExUzE2LjExIDkgMTUgOUMxMy45IDkgMTMgOS44OSAxMyAxMUMxMyAxMi4xMSAxMy45IDEzIDE1IDEzTTIyIDhWMThDMjIgMTkuMTEgMjEuMTEgMjAgMjAgMjBINEMyLjkgMjAgMiAxOS4xMSAyIDE4VjZDMiA0Ljg5IDIuOSA0IDQgNEgxMEwxMiA2SDIwQzIxLjExIDYgMjIgNi45IDIyIDhNMjAgOEg0VjE4SDIwVjhaIi8+PC9zdmc+");height: 24px;width: 24px;display: inline-block;position: absolute;left: 0;}
+
 #projects-index ul.projects div.description {
-  padding-top: 0.5em;
+  padding-top: 0;
 }
 #projects-index a.icon-user {padding-left:0; padding-right:20px; background-position:98% 50%;}
 
@@ -1140,7 +1157,7 @@ label.no-css {
 input#time_entry_comments { width: 90%;}
 input#months { width: 46px; }
 
-.jstBlock .jstTabs, .jstBlock .wiki-preview { width: 99%; }
+.jstBlock .jstTabs, .jstBlock .wiki-preview {width: 100%;}
 
 .jstBlock .jstTabs { padding-right: 6px; }
 .jstBlock .wiki-preview {padding: .5rem !important;margin-top: 0 !important;margin-bottom: .5rem !important;}
@@ -1840,7 +1857,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-folder { background-image: url(../images/folder.png); }
 .open .icon-folder { background-image: url(../images/folder_open.png); }
 .icon-package {background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxLDE2LjVDMjEsMTYuODggMjAuNzksMTcuMjEgMjAuNDcsMTcuMzhMMTIuNTcsMjEuODJDMTIuNDEsMjEuOTQgMTIuMjEsMjIgMTIsMjJDMTEuNzksMjIgMTEuNTksMjEuOTQgMTEuNDMsMjEuODJMMy41MywxNy4zOEMzLjIxLDE3LjIxIDMsMTYuODggMywxNi41VjcuNUMzLDcuMTIgMy4yMSw2Ljc5IDMuNTMsNi42MkwxMS40MywyLjE4QzExLjU5LDIuMDYgMTEuNzksMiAxMiwyQzEyLjIxLDIgMTIuNDEsMi4wNiAxMi41NywyLjE4TDIwLjQ3LDYuNjJDMjAuNzksNi43OSAyMSw3LjEyIDIxLDcuNVYxNi41TTEyLDQuMTVMMTAuMTEsNS4yMkwxNiw4LjYxTDE3Ljk2LDcuNUwxMiw0LjE1TTYuMDQsNy41TDEyLDEwLjg1TDEzLjk2LDkuNzVMOC4wOCw2LjM1TDYuMDQsNy41TTUsMTUuOTFMMTEsMTkuMjlWMTIuNThMNSw5LjIxVjE1LjkxTTE5LDE1LjkxVjkuMjFMMTMsMTIuNThWMTkuMjlMMTksMTUuOTFaIi8+PC9zdmc+);font-size: 1em;}
-.icon-user { background-image: url(../images/user.png); }
+.icon-user {background-image: url(../images/user.png);}
 .icon-project, .icon-projects { background-image: url(../images/projects.png); }
 .icon-help { background-image: url(../images/help.png); }
 .icon-attachment:before {font-family:"Material Icons";content:"attachment";font-size: 16px;position: absolute;margin-right: .2em;margin-left: -1.2rem;line-height: 16px;}

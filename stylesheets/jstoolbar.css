@@ -41,6 +41,7 @@
 .wiki-preview {
     background-color: #ffffff;
     border: 1px solid #bbbbbb;
+    box-sizing: border-box;
 }
 .wiki-preview p.empty-preview {color:#999; font-style:italic; margin-top:1em; text-align:center;}
 
