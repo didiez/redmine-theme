@@ -52,6 +52,15 @@ div#wrapper, div#wrapper2, div#wrapper3 {min-height: inherit;background-color: i
 #header h1 {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 0;}
 #header h1 .breadcrumbs {display:block;font-size: .5em;font-weight: normal;line-height: 1em;}
 
+/* para mostrar logo en header */
+body:not([class^="project-"]) #header h1 {
+  padding-left: 2rem;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiI…0xNC41Nzk5OTQgMi4wMywtMTYuNjc5OTk0IHoiIC8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K);
+  background-size: 1.5rem;
+  background-position: 0 .25rem;
+  background-repeat: no-repeat;
+}
+
 .controller-my #header {/* background: transparent; */}
 
 #quick-search {float:right;margin: .2rem 0;}
