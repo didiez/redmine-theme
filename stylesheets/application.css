@@ -893,7 +893,8 @@ dt.issue-note:after {content: "comment";color: #000;height: 24px;width: 24px;bac
 dt.issue-closed:after {content: "done_all";color: #000;height: 24px;width: 24px;background-repeat: no-repeat;background-position: 3px 3px;position: absolute;left: -3px;z-index: 2;background-color: inherit;font-family: Material Icons;font-size: 24px;line-height: 1;text-align: center;top: 2px;}
 dt.issue:after {content: "add_circle_outline";color: #000;height: 24px;width: 24px;background-repeat: no-repeat;background-position: 3px 3px;position: absolute;left: -3px;z-index: 2;background-color: inherit;font-family: Material Icons;font-size: 24px;line-height: 24px;text-align: center;top: 0px;}
 dt.attachment:after {content: "attachment";color: #000;height: 24px;width: 24px;background-repeat: no-repeat;background-position: 3px 3px;position: absolute;left: -3px;z-index: 2;background-color: inherit;font-family: Material Icons;font-size: 24px;line-height: 24px;text-align: center;top: 2px;}
-dt.issue-note {}
+dt.time-entry:before {content: "";height: 24px;width: 24px;background-repeat: no-repeat;background-position: 0;position: absolute;left: -3px;z-index: 2;background-color: inherit;top: 0px;margin: 0;background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEwLjYzLDE0LjFDMTIuMjMsMTAuNTggMTYuMzgsOS4wMyAxOS45LDEwLjYzQzIzLjQyLDEyLjIzIDI0Ljk3LDE2LjM4IDIzLjM3LDE5LjlDMjIuMjQsMjIuNCAxOS43NSwyNCAxNywyNEMxNC4zLDI0IDExLjgzLDIyLjQ0IDEwLjY3LDIwSDFWMThDMS4wNiwxNi44NiAxLjg0LDE1LjkzIDMuMzQsMTUuMThDNC44NCwxNC40MyA2LjcyLDE0LjA0IDksMTRDOS41NywxNCAxMC4xMSwxNC4wNSAxMC42MywxNC4xVjE0LjFNOSw0QzEwLjEyLDQuMDMgMTEuMDYsNC40MiAxMS44MSw1LjE3QzEyLjU2LDUuOTIgMTIuOTMsNi44NiAxMi45Myw4QzEyLjkzLDkuMTQgMTIuNTYsMTAuMDggMTEuODEsMTAuODNDMTEuMDYsMTEuNTggMTAuMTIsMTEuOTUgOSwxMS45NUM3Ljg4LDExLjk1IDYuOTQsMTEuNTggNi4xOSwxMC44M0M1LjQ0LDEwLjA4IDUuMDcsOS4xNCA1LjA3LDhDNS4wNyw2Ljg2IDUuNDQsNS45MiA2LjE5LDUuMTdDNi45NCw0LjQyIDcuODgsNC4wMyA5LDRNMTcsMjJBNSw1IDAgMCwwIDIyLDE3QTUsNSAwIDAsMCAxNywxMkE1LDUgMCAwLDAgMTIsMTdBNSw1IDAgMCwwIDE3LDIyTTE2LDE0SDE3LjVWMTYuODJMMTkuOTQsMTguMjNMMTkuMTksMTkuNTNMMTYsMTcuNjlWMTRaIi8+PC9zdmc+);}
+
 dt.changeset:after {content: "code";color: #000;height: 21px;width: 24px;background-repeat: no-repeat;background-position: 3px 3px;position: absolute;left: -3px;z-index: 2;background-color: inherit;font-family: Material Icons;font-size: 16px;line-height: 19px;text-align: center;top: 3px;opacity: 1;border: 2px solid #000;border-radius: 5px;font-weight: 700;box-sizing: border-box;text-align: center;}
 dt.news { background-image: url(../images/news.png); }
 dt.message { background-image: url(../images/message.png); }
@@ -902,7 +903,6 @@ dt.wiki-page {background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PS
 dt.attachment {}
 dt.document { background-image: url(../images/document.png); }
 dt.project { background-image: url(../images/projects.png); }
-dt.time-entry { background-image: url(../images/time.png); }
 
 #search-results dt.issue.closed { background-image: url(../images/ticket_checked.png); }
 
