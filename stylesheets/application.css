@@ -758,7 +758,7 @@ div#issue-changesets {float:right; width:45%; margin-left: 1em; margin-bottom: 1
 div#issue-changesets div.changeset { padding: 4px;}
 div#issue-changesets div.changeset { border-bottom: 1px solid #ddd; }
 div#issue-changesets p { margin-top: 0; margin-bottom: 1em;}
-.changeset-comments {margin-bottom:1em;padding: 0 1rem !important;flex: 1;}
+.changeset-comments {margin-bottom:1rem;padding: 0 1rem !important;flex: 1;line-height:unset !important;}
 .changeset-comments p:first-child {margin-top: 0;}
 .changeset-comments p:last-child {margin-bottom: 0;}
 div.journal ul.details img {margin:0 0 -3px 4px;}
