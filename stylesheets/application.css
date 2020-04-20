@@ -744,6 +744,7 @@ div.journal ul.details img {margin:0 0 -3px 4px;}
 div.journal ul.details img[alt="Magnifier"]{display: none;}
 div.journal {overflow: visible;padding: 0;border-radius: 5px;background: #fff;margin-bottom: 1rem;border: 1px solid rgba(0,0,0,.24);position: relative;}
 div.journal .contextual {display: flex;flex-direction: column-reverse;font-size: .8rem;position: absolute;right: 1rem;top: 1rem;z-index: 1;}
+div.journal.time_entry .contextual {flex-direction: column;}
 div.journal .contextual .journal-link {
     font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
     font-weight: 700;
@@ -751,9 +752,11 @@ div.journal .contextual .journal-link {
     text-align: center;
     font-size: .9rem;
 }
+div.journal .contextual .journal-actions:empty {display: none}
 div.journal .contextual .journal-actions {display: flex;flex-direction: column;margin-top: 0;align-items: center;/* font-size: 0; */text-align: right;height: 48px;width: 24px;position: relative;top: 0;border: 1px solid transparent;}
 div.journal .contextual .journal-actions:before {content:"more_horiz";font-family:"Material Icons";color: #169;font-size: 24px;height: 24px;line-height: 24px;position: absolute;top: 24px;background-color: #fff;z-index: 1;}
-div.journal .contextual .journal-actions a {
+div.journal .contextual .journal-actions a,
+div.journal .contextual a.icon-only {
     height: 24px;
     width: auto;
     margin: 0;
@@ -772,7 +775,7 @@ div.journal .contextual .journal-actions a:first-child {
 }
 div.journal .contextual .journal-actions a:first-child:hover + a,
 div.journal .contextual .journal-actions a:first-child:hover + a + a {display: none; z-index: 0}
-div.journal .contextual .journal-actions a:before {font-weight: normal;font-size: 16px;margin: 0;width: 24px;text-align: center;color: #169;line-height: 24px;display: inherit;}
+div.journal .contextual .journal-actions a:before, div.journal .contextual a.icon-only:before {font-weight: normal;font-size: 16px;margin: 0;width: 24px;text-align: center;color: #169;line-height: 24px;display: inherit;}
 div.journal .contextual .journal-actions a:hover:before {color:#c61a1a;}
 div.journal .contextual .journal-actions a:nth-child(2) {display: none;z-index: 2;background: #fff;}
 div.journal .contextual .journal-actions a:nth-child(3) {display: none;}
@@ -789,7 +792,7 @@ body.avatars-on div.journal h4 {padding-left: 3rem; width: 9rem;}
 body.avatars-on div.journal h4 img.gravatar {margin-right: .5rem;position: absolute;margin-left: -2.4rem;margin-top: -2px;}
 div.journal h4 img.gravatar {margin-left: 0;}
 div.journal > div {border-radius: 5px; overflow: hidden;}
-div.journal.changeset {line-height: 1.5;}
+div.journal.changeset {/*line-height: 1.5;*/}
 div.journal.changeset > h4 + p {
   padding: 1rem;
   margin: 0;
@@ -806,8 +809,8 @@ div.journal.changeset {
 }
 
 div.journal.private-notes {border-left:2px solid #d22; padding-left:4px; margin-left:-6px;}
-div.journal > div > h4, div.journal.changeset > h4 {border-bottom: none;font-size: 0;padding: 1rem 1rem 0 .8rem;margin-bottom: 1rem;position: relative;height: 2rem;display: flex;flex-direction: column;white-space: nowrap;}
-div.journal > div > h4 > a,  div.journal.changeset > h4 > a {font-size: .8rem;/* margin-right: .5rem; */width: fit-content;}
+div.journal h4.note-header, div.journal.time_entry > h4, div.journal.changeset > h4 {border-bottom: none;font-size: 0;padding: 1rem 1rem 0 .8rem;margin-bottom: 1rem;position: relative;height: 2rem;display: flex;flex-direction: column;white-space: nowrap;}
+div.journal h4.note-header > a, div.journal.time_entry > h4 > a, div.journal.changeset > h4 > a {font-size: .8rem;/* margin-right: .5rem; */width: fit-content;}
 div.journal > div > h4 > a:last-of-type,  div.journal.changeset > h4 > a:last-of-type {/* position: absolute; *//* left: 3.2rem; *//* top: 2rem; *//* font-weight: normal; *//* font-size: .8rem; */font-size: .7rem;}
 div.journal > div > h4 > a:last-of-type, div.journal.changeset > h4 > a:last-of-type:before {content:"hace "}
 div.journal > div > h4 > a:last-of-type:before {content: "hace ";}
@@ -1854,7 +1857,8 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 0;
+  font-size: 1rem;
+  text-indent: 999999;
   text-decoration: none !important;
 }
 .icon-only:before {font-size: 1rem;margin-left: 0 !important;}
