@@ -885,7 +885,7 @@ dt.changeset:after {content: "code";color: #000;height: 21px;width: 24px;backgro
 dt.news { background-image: url(../images/news.png); }
 dt.message { background-image: url(../images/message.png); }
 dt.reply { background-image: url(../images/comments.png); }
-dt.wiki-page {background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkgMjJDOC40NSAyMiA4IDIxLjU1IDggMjFWMThINEMyLjkgMTggMiAxNy4xMSAyIDE2VjRDMiAyLjg5IDIuOSAyIDQgMkgyMEMyMS4xMSAyIDIyIDIuOSAyMiA0VjE2QzIyIDE3LjExIDIxLjExIDE4IDIwIDE4SDEzLjlMMTAuMiAyMS43MUMxMCAyMS45IDkuNzUgMjIgOS41IDIySDlNMTAgMTZWMTkuMDhMMTMuMDggMTZIMjBWNEg0VjE2SDEwTTE1Ljg0IDguMkwxNC44MyA5LjIxTDEyLjc2IDcuMThMMTMuNzcgNi4xNkMxMy45NyA1Ljk1IDE0LjMxIDUuOTQgMTQuNTUgNi4xNkwxNS44NCA3LjQxQzE2LjA1IDcuNjIgMTYuMDYgNy45NiAxNS44NCA4LjJNOCAxMS45MUwxMi4xNyA3LjcyTDE0LjI0IDkuOEwxMC4wOCAxNEg4VjExLjkxWiIvPjwvc3ZnPg==);}
+dt.wiki-page {background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwO…0yMC4yLDE2LjlMMTQuMSwyM0gxMlYyMC45TDE4LjEsMTQuOEwyMC4yLDE2LjlaIi8+PC9zdmc+);background-size: 24px;background-position: -3px 0 !important;}
 dt.attachment {}
 dt.document { background-image: url(../images/document.png); }
 dt.project { background-image: url(../images/projects.png); }
