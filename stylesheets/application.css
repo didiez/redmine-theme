@@ -317,6 +317,7 @@ table.list td.buttons a.icon-link-break {background-image: none;padding: 0;displ
 table.list td.buttons a.icon-link-break:before {content: "delete";font-family:"Material Icons";font-size: 20px;line-height: 24px;text-align: center;display: block;}
 table.list td.buttons a:last-child, div.buttons a:last-child {margin-right: 0 !important;}
 table.list td.buttons img, div.buttons img {vertical-align:middle;}
+table.time-entries td:last-child {width: 1px; white-space: nowrap;} /* para forzar fit-content en ultima columna .time-entries (buttons) */
 table.list td.reorder {width:15%; white-space:nowrap; text-align:center; }
 table.list table.progress td {padding: 0 !important;}
 table.list caption { text-align: left; padding: 0.5em 0.5em 0.5em 0; }
