@@ -1624,7 +1624,7 @@ div.wiki img {vertical-align:middle; max-width:100%;}
 /***** My page layout *****/
 #my-page {
     overflow: visible;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 .dragging .ui-sortable-placeholder {
   border:2px dashed #999;
@@ -1637,7 +1637,8 @@ div.wiki img {vertical-align:middle; max-width:100%;}
   color:#505050;
   border-radius: 3px;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .mypage-box>.contextual {opacity: 0.001;transition: opacity 0.2s;display: inline-flex;}
