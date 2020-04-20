@@ -1878,7 +1878,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-help { background-image: url(../images/help.png); }
 .icon-attachment:before {font-family:"Material Icons";content:"attachment";font-size: 16px;position: absolute;margin-right: .2em;margin-left: -1.2rem;line-height: 16px;}
 .icon-history  { background-image: url(../images/history.png); }
-.icon-time-entry:before, .icon-time:before {font-family:"Material Icons";content:"schedule";font-size: 1.3em;position: absolute;margin-left: -1.2em;font-weight: 700;}
+.icon-time-entry:before, .icon-time:before {font-family:"Material Icons";content:"schedule";font-size: 1.3em;position: absolute;margin-left: -1.1em;}
 .icon-time-add:before {font-family:"Material Icons";content:"schedule";font-size: 1.5em;position: absolute;margin-left: -1.1em;}
 .icon-stats  { background-image: url(../images/stats.png); }
 .icon-warning  { background-image: url(../images/warning.png); }
