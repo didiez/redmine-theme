@@ -1540,7 +1540,7 @@ button.tab-left.disabled, button.tab-right.disabled {
 
 /***** Diff *****/
 .diff_out { background: #fcc; }
-.diff_out span { background: #faa; }
+.diff_out span {background: #faa;display: inline-block;margin-top: -4px;padding-top: 4px;margin-bottom: -1px;padding-bottom: 1px;}
 .diff_in { background: #cfc; }
 .diff_in span { background: #afa; }
 
