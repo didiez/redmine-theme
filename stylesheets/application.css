@@ -320,7 +320,7 @@ table.list td.priority {position: relative;font-weight: 500;line-height: 1.2;}
 table.list td.priority:before {content:"";width: 80%;height: 1.7rem;background-color: rgba(0,0,0,.08);display: inline-block;position: absolute;z-index: 0;margin-top: -.35rem;left: 10%;border-radius: 3px;box-sizing: border-box;}
 
 table.list tr.priority-7 td.priority {color: #470066;font-weight: 500;}
-table.list tr.priority-7 td.priority:before {background-color: rgba(180, 0, 255, 0.2);border: 2px solid #8f00cc;}
+table.list tr.priority-7 td.priority:before {background-color: rgba(180, 0, 255, 0.2);/*border: 2px solid #8f00cc;*/}
 
 table.list tr.priority-6 td.priority {color: #660000;font-weight: 500;}
 table.list tr.priority-6 td.priority:before {background-color: rgba(255, 0, 0, .2);}
