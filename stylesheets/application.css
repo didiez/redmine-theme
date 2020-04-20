@@ -328,8 +328,8 @@ table.list tr.priority-6 td.priority:before {background-color: rgba(255, 0, 0, .
 table.list tr.priority-5 td.priority {color: hsla(37, 100%, 15%, 1);font-weight: 500;}
 table.list tr.priority-5 td.priority:before {background-color: hsla(37, 100%, 57%, 0.4);}
 
-table.list tr.priority-3 td.priority {font-weight: 500; color: hsla(120, 38%, 35%, 1)}
-table.list tr.priority-3 td.priority:before {background-color: rgb(186, 224, 186, .);}
+table.list tr.priority-3 td.priority {font-weight: 500;color: #377b37;}
+table.list tr.priority-3 td.priority:before {background-color: rgb(186, 224, 186, .3);}
 
 .table-list-cell {display: table-cell; vertical-align: top; padding:2px; }
 .table-list div.buttons {width: 15%;}
