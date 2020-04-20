@@ -303,6 +303,15 @@ table.list td.buttons a, div.buttons a {
     margin-right: 0.8rem;
     display: inline-block;
 }
+table.list td.buttons a.icon-only:before {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+}
 table.list td.buttons a {margin-top: 0rem;margin-bottom: -.2rem;}
 table.list td.buttons a.icon-link-break {background-image: none;padding: 0;display: inline-block;}
 table.list td.buttons a.icon-link-break:before {content: "delete";font-family:"Material Icons";font-size: 20px;line-height: 24px;text-align: center;display: block;}
@@ -673,9 +682,20 @@ div.issue #relations .issues tr {border-top: none;}
 div.issue #relations .issues td {/* padding: .5em; */}
 div.issue > .contextual {position: absolute;right: 1rem;z-index: 2;}
 div.issue .description .icon-comment:before {content:"format_quote";font-size: 1.3rem;line-height: 1rem;margin-left: -.3rem;display: inline-block;}
-div.issue .attachments td {display: inline-flex;align-items:center;/* margin-right: .5rem; */}
-div.issue .attachments td > * {margin-right: .5rem}
-div.issue .attachments .icon-download:before {font-size: 16px;width: 24px;height: 24px;display: block;line-height: 24px;text-align: center;margin: 0;}
+div.issue .attachments td {display: inline-flex;align-items:center;padding:0;/* margin-right: .5rem; */}
+div.issue .attachments td > * {margin-right: .5rem; line-height: 24px;}
+div.issue .attachments td > a.icon-attachment {padding-left: 1.8rem;}
+div.issue .attachments td > a.icon-attachment:before {height: 24px; width: 24px; line-height: 24px; margin: 0 0 0 -1.8rem; text-align: center;}
+div.issue .attachments td > a.icon-only:before {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  margin: 0;
+  height: 24px;
+  width: 24px;
+}
+
 p.breadcrumb { font-size: 0.9em; margin: 4px 0 4px 0;}
 p.subtitle { font-size: 0.9em; margin: -6px 0 12px 0; font-style: italic; }
 p.footnote { font-size: 0.9em; margin-top: 0px; margin-bottom: 0px; }
@@ -1857,8 +1877,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 1rem;
-  text-indent: 999999;
+  font-size: 0;
   text-decoration: none !important;
 }
 .icon-only:before {font-size: 1rem;margin-left: 0 !important;}
@@ -1935,7 +1954,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-add-bullet { background-image: url(../images/bullet_add.png); }
 .icon-shared { background-image: url(../images/link.png); }
 .icon-actions {}
-.icon-actions:before {content:"more_horiz";font-family: "Material Icons";font-size: 24px;line-height: 24px;}
+.icon-actions:before {content:"more_horiz";font-family: "Material Icons";font-size: 24px !important;line-height: 24px !important;}
 .icon-sort-handle { background-image: url(../images/reorder.png); }
 .icon-expended { background-image: url(../images/arrow_down.png); }
 .icon-collapsed { background-image: url(../images/arrow_right.png); }
