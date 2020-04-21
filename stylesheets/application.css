@@ -860,6 +860,7 @@ div.journal div.wiki .contextual a[title="Modificar"]:before {content:"edit"; fo
 
 div.journal div.wiki p:last-child {margin-bottom:0;}
 
+#history {margin-bottom: 1rem;}
 #history .tab-content {
   padding: 0;
   margin: 0;
