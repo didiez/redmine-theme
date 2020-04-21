@@ -877,8 +877,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   background: transparent;
   padding-top: 1rem;
   margin-top: -1rem;
-  border-top: 0;
-  border: none;
+  border-color: transparent;
 }
 #history div.journal.changeset:target {margin: -1px -1px calc(1rem - 1px) -1px;}
 
@@ -908,6 +907,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   background-color: #fff;
   box-sizing: border-box;
   height: calc(100% - 1rem);
+  margin: -1px;
 }
 
 #history div:target h4.note-header {/* background-color:#DDEEFF; */}
