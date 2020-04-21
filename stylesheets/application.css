@@ -875,6 +875,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   box-shadow: 0 0 0 0.4em #c8e1ff;
   margin: -2px;
 }
+#history div.journal.changeset:target {margin: -1px -1px calc(1rem - 1px) -1px}
 #history div:target h4.note-header {/* background-color:#DDEEFF; */}
 
 #history p.nodata {display: none;}
