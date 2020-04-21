@@ -818,7 +818,8 @@ body.avatars-on div.journal {padding-left: 0;}
 body.avatars-on div.journal h4 {padding-left: 3rem; width: 9rem;}
 body.avatars-on div.journal h4 img.gravatar {margin-right: .5rem;position: absolute;margin-left: -2.4rem;margin-top: -2px;}
 div.journal h4 img.gravatar {margin-left: 0;}
-div.journal > div {border-radius: 5px;overflow: hidden;background: #fff;border: 1px solid rgba(0,0,0,.24);border-radius: 5px;}
+div.journal:not(.changeset) > div,
+div.journal.changeset {border-radius: 5px;overflow: hidden;background: #fff;border: 1px solid rgba(0,0,0,.24);border-radius: 5px;}
 div.journal.changeset {/*line-height: 1.5;*/}
 div.journal.changeset > h4 + p {
   padding: 1rem;
@@ -879,7 +880,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   margin-top: -1rem;
   border-color: transparent;
 }
-#history div.journal.changeset:target {margin: -1px -1px calc(1rem - 1px) -1px;}
+#history div.journal.changeset:target {/* margin: -1px -1px calc(1rem - 1px) -1px; */overflow: visible;}
 
 #history div.has-details:target > div .contextual, 
 #history div.has-notes:target > div > .contextual, 
