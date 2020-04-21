@@ -326,20 +326,29 @@ table.list tr.overdue td.due_date  { color: #c22; }
 table.list th.tracker, table.list td.tracker {width: 1px; white-space: nowrap;} /* para forzar fit-content */
 table.list th.priority, table.list td.priority {width: 1px; white-space: nowrap;} /* para forzar fit-content */
 table.list th.done_ratio, table.list td.done_ratio {width: 1px; white-space: nowrap;} /* para forzar fit-content */
-table.list td.priority {position: relative;font-weight: 500;line-height: 1.2;}
-table.list td.priority:before {content:"";width: 80%;height: 1.7rem;background-color: rgba(0,0,0,.08);display: inline-block;position: absolute;z-index: 0;margin-top: -.35rem;left: 10%;border-radius: 3px;box-sizing: border-box;}
+table.list td.priority,div.issue .attribute.priority .value {position: relative;font-weight: 500;line-height: 1.2;}
+table.list td.priority:before, div.issue .attribute.priority .value:before {content:"";width: 80%;height: 1.7rem;background-color: rgba(0,0,0,.08);display: inline-block;position: absolute;z-index: 0;margin-top: -.35rem;left: 10%;border-radius: 3px;box-sizing: border-box;}
 
-table.list tr.priority-7 td.priority {color: #470066;font-weight: 500;}
-table.list tr.priority-7 td.priority:before {background-color: rgba(180, 0, 255, 0.2);/*border: 2px solid #8f00cc;*/}
+div.issue .attribute.priority .value {
+    display: table;
+    padding: 0 .5rem;
+}
+div.issue .attribute.priority .value:before {
+    width: 100%;
+    left: 0;
+}
 
-table.list tr.priority-6 td.priority {color: #660000;font-weight: 500;}
-table.list tr.priority-6 td.priority:before {background-color: rgba(255, 0, 0, .2);}
+table.list tr.priority-7 td.priority,div.issue.priority-7 .attribute.priority .value {color: #470066;font-weight: 500;}
+table.list tr.priority-7 td.priority:before,div.issue.priority-7 .attribute.priority .value:before {background-color: rgba(180, 0, 255, 0.2);/*border: 2px solid #8f00cc;*/}
 
-table.list tr.priority-5 td.priority {color: hsla(37, 100%, 15%, 1);font-weight: 500;}
-table.list tr.priority-5 td.priority:before {background-color: hsla(37, 100%, 57%, 0.4);}
+table.list tr.priority-6 td.priority,div.issue.priority-6 .attribute.priority .value {color: #660000;font-weight: 500;}
+table.list tr.priority-6 td.priority:before,div.issue.priority-6 .attribute.priority .value:before {background-color: rgba(255, 0, 0, .2);}
 
-table.list tr.priority-3 td.priority {font-weight: 500;color: #377b37;}
-table.list tr.priority-3 td.priority:before {background-color: rgb(186, 224, 186, .3);}
+table.list tr.priority-5 td.priority,div.issue.priority-5 .attribute.priority .value {color: hsla(37, 100%, 15%, 1);font-weight: 500;}
+table.list tr.priority-5 td.priority:before,div.issue.priority-5 .attribute.priority .value:before {background-color: hsla(37, 100%, 57%, 0.4);}
+
+table.list tr.priority-3 td.priority,div.issue.priority-3 .attribute.priority .value {font-weight: 500;color: #377b37;}
+table.list tr.priority-3 td.priority:before,div.issue.priority-3 .attribute.priority .value:before {background-color: rgb(186, 224, 186, .3);}
 
 .table-list-cell {display: table-cell; vertical-align: top; padding:2px; }
 .table-list div.buttons {width: 15%;}
@@ -718,7 +727,7 @@ div.issue p.author {margin-top:0.5em;}
 div.issue span.private, div.journal span.private {font-size: 60%;}
 div.issue .next-prev-links {color:#999;}
 div.issue .attributes {margin-top: 2em;}
-div.issue .attributes .attribute {padding-left:180px; clear:left; min-height: 1.8em;}
+div.issue .attributes .attribute {padding-left:180px; clear:left; min-height: 1.6rem;}
 div.issue .attributes .attribute .label {width: 170px; margin-left:-180px; font-weight:bold; float:left;  overflow:hidden; text-overflow: ellipsis;}
 div.issue .attribute .value {overflow:auto; text-overflow: ellipsis;}
 div.issue.overdue .due-date .value { color: #c22; }
@@ -834,7 +843,7 @@ div.journal form input[type="submit"] + a {line-height: 1.5rem;display: inline-b
 div.journal.changeset > h4 + p > a:first-child {/* font-family: monospace; */}
 
 div.journal.changeset {
-  display: flex 
+  display: flex
 }
 
 div.journal.private-notes {border-left:2px solid #d22; padding-left:4px; margin-left:-6px;}
@@ -870,9 +879,9 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
 }
 
 /* Hacks para añadir un espaciado superior a los elementos usados como ancla (#hash), en css :target */
-/* :target puede ser #note-1 o #change-32742 (wrapper div) */ 
+/* :target puede ser #note-1 o #change-32742 (wrapper div) */
 /* START TARGET_ANCHOR_SPACING */
-#history div.has-details:target > div, 
+#history div.has-details:target > div,
 #history div.has-notes:target > div,
 #history div:not(.has-details):not(.has-notes):target {
   background: transparent;
@@ -881,18 +890,18 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   border-color: transparent;
 }
 #history div.journal.changeset:target {overflow: visible;}
-#history div.has-details:target > div .contextual, 
-#history div.has-notes:target > div > .contextual, 
+#history div.has-details:target > div .contextual,
+#history div.has-notes:target > div > .contextual,
 #history div:not(.has-details):not(.has-notes):target .contextual {
   top: 2rem;
 }
-#history div.has-details:target > div > *:not(.contextual), 
-#history div.has-notes:target > div > *:not(.contextual), 
+#history div.has-details:target > div > *:not(.contextual),
+#history div.has-notes:target > div > *:not(.contextual),
 #history div:not(.has-details):not(.has-notes):target > *:not(.contextual) {
   position: relative;
   z-index: 1;
 }
-#history div.has-details:target > div:before, 
+#history div.has-details:target > div:before,
 #history div.has-notes:target > div:before,
 #history div:not(.has-details):not(.has-notes):target:before {
   content:"";
