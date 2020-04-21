@@ -866,7 +866,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   border: 0;
 }
 
-#history div:target {border: 1px solid #2188ff;box-shadow: 0 0 0 0.2em #c8e1ff;}
+#history div:target {border: 2px solid #2188ff;box-shadow: 0 0 0 0.4em #c8e1ff;margin: -2px;}
 #history div:target h4.note-header {/* background-color:#DDEEFF; */}
 #history p.nodata {display: none;}
 
