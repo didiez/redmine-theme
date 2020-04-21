@@ -769,7 +769,7 @@ div#issue-changesets p { margin-top: 0; margin-bottom: 1em;}
 .changeset-comments p:last-child {margin-bottom: 0;}
 div.journal ul.details img {margin:0 0 -3px 4px;}
 div.journal ul.details img[alt="Magnifier"]{display: none;}
-div.journal {overflow: visible;padding: 0;border-radius: 5px;background: #fff;margin-bottom: 1rem;border: 1px solid rgba(0,0,0,.24);position: relative;}
+div.journal {overflow: visible;padding: 0;margin-bottom: 1rem;position: relative;}
 div.journal .contextual {display: flex;flex-direction: column-reverse;font-size: .8rem;position: absolute;right: 1rem;top: 1rem;z-index: 1;}
 div.journal.time_entry .contextual {flex-direction: column;}
 div.journal .contextual .journal-link {
@@ -818,7 +818,7 @@ body.avatars-on div.journal {padding-left: 0;}
 body.avatars-on div.journal h4 {padding-left: 3rem; width: 9rem;}
 body.avatars-on div.journal h4 img.gravatar {margin-right: .5rem;position: absolute;margin-left: -2.4rem;margin-top: -2px;}
 div.journal h4 img.gravatar {margin-left: 0;}
-div.journal > div {border-radius: 5px; overflow: hidden;}
+div.journal > div {border-radius: 5px;overflow: hidden;background: #fff;border: 1px solid rgba(0,0,0,.24);border-radius: 5px;}
 div.journal.changeset {/*line-height: 1.5;*/}
 div.journal.changeset > h4 + p {
   padding: 1rem;
@@ -871,12 +871,44 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
 #history div.has-details:target > div, 
 #history div.has-notes:target > div,
 #history div:not(.has-details):not(.has-notes):target {
-  border: 2px solid #2188ff;
-  box-shadow: 0 0 0 0.4em #c8e1ff;
-  margin: -2px;
+  /* border: 2px solid #2188ff; */
+  /* box-shadow: 0 0 0 0.4em #c8e1ff; */
+  /* margin: 0; */
+  background: transparent;
+  padding-top: 1rem;
+  margin-top: -1rem;
+  border-top: 0;
+  border: none;
 }
 #history div.journal.changeset:target {margin: -1px -1px calc(1rem - 1px) -1px;}
 
+#history div.has-details:target > div .contextual, 
+#history div.has-notes:target > div > .contextual, 
+#history div:not(.has-details):not(.has-notes):target .contextual {
+  top: 2rem;
+}
+
+#history div.has-details:target > div > *:not(.contextual), 
+#history div.has-notes:target > div > *:not(.contextual), 
+#history div:not(.has-details):not(.has-notes):target > *:not(.contextual) {
+  position: relative;
+  z-index: 1;
+}
+
+#history div.has-details:target > div:before, 
+#history div.has-notes:target > div:before,
+#history div:not(.has-details):not(.has-notes):target:before {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 0.4em #c8e1ff;
+  border-radius: 5px;
+  border: 2px solid #2188ff;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: calc(100% - 1rem);
+}
 
 #history div:target h4.note-header {/* background-color:#DDEEFF; */}
 
