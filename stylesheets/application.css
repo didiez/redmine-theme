@@ -867,8 +867,16 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   border: 0;
 }
 
-#history div:target {border: 2px solid #2188ff;box-shadow: 0 0 0 0.4em #c8e1ff;margin: -2px;}
+/* :target puede ser #note-1 o #change-32742 (wrapper div) */ 
+#history div.has-details:target > div, 
+#history div.has-notes:target > div,
+#history div:not(.has-details):not(.has-notes):target {
+  border: 2px solid #2188ff;
+  box-shadow: 0 0 0 0.4em #c8e1ff;
+  margin: -2px;
+}
 #history div:target h4.note-header {/* background-color:#DDEEFF; */}
+
 #history p.nodata {display: none;}
 
 div#activity {background-color: inherit;}
