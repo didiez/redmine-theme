@@ -621,8 +621,8 @@ html>body #content > .contextual a.icon-del:before {display:none;}
 .splitcontenttop {flex: 2; flex-basis: 100%;}
 
 form {display: inline;}
-input, select, button {vertical-align: middle; margin-top: 1px; margin-bottom: 1px; height: 24px; padding: 0 7px;}
-input, select, textarea, button { color: #333; background-color: #fff; border:1px solid #ccc; border-radius:3px; box-sizing: border-box;}
+input, select, button {font-family: "Roboto", sans-serif; vertical-align: middle; margin-top: 1px; margin-bottom: 1px; height: 24px; padding: 0 7px;}
+input, select, textarea, button { font-family: "Roboto", sans-serif; color: #333; background-color: #fff; border:1px solid #ccc; border-radius:3px; box-sizing: border-box;}
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -641,14 +641,20 @@ input[type="submit"], button[type="submit"] {
   cursor: pointer;
   background-color: #fff;
   height: 28px;
+  box-sizing: border-box;
+  line-height: 1;
+  border: 2px solid #116699;
+  font-weight: 500;
+  padding: 4px 8px;
   -webkit-transition: background-color 100ms linear;
   -moz-transition: background-color 100ms linear;
   -o-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
 }
 input[type="submit"]:hover, button[type="submit"]:hover {
-  background-color: #ddd;
+  background-color: rgba(0,0,0,.08);
 }
+input[type="submit"] + a, button[type="submit"] + a {margin-left: .5rem;}
 
 input[type="text"]:focus, input[type="text"]:active,
 input[type="password"]:focus, input[type="password"]:active,
@@ -661,7 +667,7 @@ textarea:focus, textarea:active {
 }
 
 select[multiple=multiple] {background: #fff; padding-right: initial; height: auto;}
-fieldset {border: 1px solid #e4e4e4; margin:0; min-width: inherit;}
+fieldset {border: 1px solid #e4e4e4; margin:0; min-width: inherit; position: relative;}
 legend {color: #333;position: relative;}
 hr { width: 100%; height: 1px; background: #ccc; border: 0;}
 blockquote {position: relative;font-style: italic;padding-left: 1em;margin-left: 0.5em;border-left: 3px solid #ccc;overflow: auto;}
