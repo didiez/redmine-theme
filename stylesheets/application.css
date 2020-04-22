@@ -737,6 +737,9 @@ div.issue > hr {margin: 1.5em -1em;box-sizing: content-box;width: 100%;padding: 
 div.issue .description .wiki {line-height: 1.5;}
 div.issue #issue-tree {}
 div.issue #relations {}
+div.issue #relations .new_relation > p > * {height: 28px;}
+div.issue #relations .new_relation > p > *:first-child {margin-right: .5rem;}
+div.issue #relations .new_relation > p > *:not(:first-child) {margin-left: .5rem;}
 div.issue #relations .issues tr {border-top: none;}
 div.issue #relations .issues td {/* padding: .5em; */}
 div.issue > .contextual {position: absolute;right: 1rem;z-index: 2;}
