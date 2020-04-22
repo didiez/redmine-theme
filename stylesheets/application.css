@@ -377,6 +377,15 @@ table.list tr.status-3 td.status:before,
 div.issue.status-3 .attribute.status .value:before {
   background: #8bc34a;
 }
+table.list tr.status-5 td.status:before, 
+div.issue.status-5 .attribute.status .value:before {
+  background: #aaa;
+}
+table.list tr.status-5 td.status, 
+div.issue.status-5 .attribute.status .value {
+  color: #aaa;
+  text-decoration: line-through;
+}
 
 div.issue .attribute.status .value {
   overflow: visible;
