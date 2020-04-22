@@ -298,7 +298,7 @@ table.list td.tick {width:15%}
 table.list td.checkbox {width: 15px;}
 table.list .checkbox input {padding:0px;}
 table.list td.buttons {padding: 0 1rem;}
-table.list td.buttons, div.buttons {white-space:nowrap;/* text-align: right; */margin: 0;vertical-align: middle;}
+table.list td.buttons, div.buttons {white-space:nowrap;width: 1px;margin: 0;vertical-align: middle;}
 table.list td.buttons a, div.buttons a {
     margin-right: 0.8rem;
     display: inline-block;
@@ -965,7 +965,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
 
 #history p.nodata {display: none;}
 
-div#activity {background-color: inherit;}
+div#activity {background-color: inherit;overflow: auto;}
 div#activity dl:before {content: "";border-left: 2px solid #000;height: 100%;display: block;width: 0;position: absolute;left: .6em;}
 div#activity dl, #search-results {margin-left: 2em;position: relative;background-color: inherit;}
 div#activity dd, #search-results dd {margin-bottom: 1em;padding-left: 18px;font-size: 0.9em;margin-left: 4.5rem;}
