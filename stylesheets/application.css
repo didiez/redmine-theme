@@ -290,7 +290,7 @@ table.list th a.icon {padding-left: 0;}
 table.list td {vertical-align: middle;padding: .8rem 1rem;border: 0;}
 table.list td.id {width: 2%;text-align: center;font-family: "Roboto Mono";}
 table.list td.name, table.list td.description, table.list td.subject, table.list td.comments, table.list td.roles, table.list td.attachments, table.list td.text,  table.list td.short_description {text-align: left;}
-
+table.list th.status, table.list td.status {text-align: left;}
 table.list.projects thead th {text-align: left;}
 
 table.list td.attachments a {display:block;}
@@ -349,6 +349,39 @@ table.list tr.priority-5 td.priority:before,div.issue.priority-5 .attribute.prio
 
 table.list tr.priority-3 td.priority,div.issue.priority-3 .attribute.priority .value {font-weight: 500;color: #377b37;}
 table.list tr.priority-3 td.priority:before,div.issue.priority-3 .attribute.priority .value:before {background-color: rgb(186, 224, 186, .3);}
+
+table.list tr td.status:before,
+div.issue .attribute.status .value:before {
+  content:"";
+  height:.5rem;
+  width:.5rem;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: .5rem;
+  border-radius:.25rem;
+  background:  rgba(0,0,0,.12);
+}
+table.list tr.status-1 td.status:before, 
+div.issue.status-1 .attribute.status .value:before {
+  background: rgba(0,0,0,.12);
+}
+table.list tr.status-2 td.status:before,
+div.issue.status-2 .attribute.status .value:before {
+  background: #2188ff;
+  animation: blinker 2s linear infinite;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+table.list tr.status-3 td.status:before, 
+div.issue.status-3 .attribute.status .value:before {
+  background: #8bc34a;
+}
+
+div.issue .attribute.status .value {
+  overflow: visible;
+}
+
 
 .table-list-cell {display: table-cell; vertical-align: top; padding:2px; }
 .table-list div.buttons {width: 15%;}
