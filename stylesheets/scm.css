@@ -35,7 +35,7 @@ li.change .copied-from:before { content: " - "}
 #changes-legend li { float: left; background-position: 5px 0; }
 
 table.filecontent {border-collapse: collapse;width: 100%;background-color: transparent;color: #000;border-radius: 5px;}
-table.filecontent tbody {font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;font-size:12px;background: #fff;border: 2px solid #000;overflow: hidden;}
+table.filecontent tbody {font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;font-size:12px;background: #fff;border: 1px solid #000;overflow: hidden;}
 table.filecontent th {border-top: 1px solid rgba(0,0,0,.05);background-color: rgba(0,0,0,.01);}
 table.filecontent th.filename {background-color: transparent;text-align: left;padding: 1em 0;border: 0;border-radius: 5px 5px 0 0;font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;}
 table.filecontent tr.spacing th { text-align:center; }
@@ -43,8 +43,8 @@ table.filecontent tr.spacing td { height: 0.4em; background: #EAF2F5;}
 table.filecontent th.line-num {
     border-color: #efefef;
     text-align: right;
-    width: 2%;
-    padding: 4px 4px 1px 4px;
+    width: 4ch;
+    padding: 0 1ch;
     color: rgba(0,0,0,.7);
     user-select: none;
     -moz-user-select: none;
@@ -52,19 +52,22 @@ table.filecontent th.line-num {
     -ms-user-select: none;
     -webkit-user-select: none;
     font-weight:normal;
-    border-width: 0 1px 1px;
+    border-width: 0;
     border-style: solid;
+    box-sizing: content-box;
+    line-height: 18px;
 }
 table.filecontent th.line-num a {
     text-decoration: none;
     color: inherit;
 }
-table.filecontent td.line-code {padding: 4px 0 1px 4px;}
+table.filecontent td.line-code {padding: 0;}
 table.filecontent td.line-code pre {
     margin: 0px;
     white-space: pre-wrap;
     font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
     font-size:12px;
+    line-height: 18px;
 }
 
 /* 12 different colors for the annonate view */

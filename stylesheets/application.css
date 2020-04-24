@@ -1014,6 +1014,30 @@ span.project {
     font-weight: 400;
 }
 
+.controller-repositories #content > .details > h4:first-child {
+    border: 0;
+    font-size: 0;
+}
+.controller-repositories #content > .details > h4:first-child img {
+    float: left;
+    margin-right: .5rem;
+}
+.controller-repositories #content > .details > h4:first-child a {
+    font-size: 13px;
+    display: table;
+    margin-left: 3rem;
+}
+.controller-repositories #content > .details > h4:first-child > a:first-of-type {margin-top: 4px;}
+.controller-repositories #content > .details > h4:first-child > a:last-of-type:before {content: "hace ";}
+.controller-repositories #content > .changeset-comments {
+  margin-left: 3rem;
+  padding: 1rem !important;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.24);
+  display: table;
+  border-radius: 5px;
+}
+
 #search-results dd { margin-bottom: 1em; padding-left: 20px; margin-left:0px; }
 
 div#search-results-counts {float:right;}
