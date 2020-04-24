@@ -928,7 +928,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   border: 0;
 }
 
-/* Hacks para añadir un espaciado superior a los elementos usados como ancla (#hash), en css :target */
+/* Hacks para aÃ±adir un espaciado superior a los elementos usados como ancla (#hash), en css :target */
 /* :target puede ser #note-1 o #change-32742 (wrapper div) */
 /* START TARGET_ANCHOR_SPACING */
 #history div.has-details:target > div,
@@ -1708,9 +1708,9 @@ button.tab-left.disabled, button.tab-right.disabled {
 
 /***** Diff *****/
 .diff_out { background: #fcc; }
-.diff_out span {background: #faa;display: inline-block;margin-top: -4px;padding-top: 4px;margin-bottom: -1px;padding-bottom: 1px;}
+.diff_out span {background: #faa;display: inline-block;}
 .diff_in { background: #cfc; }
-.diff_in span { background: #afa;display: inline-block;margin-top: -4px;padding-top: 4px;margin-bottom: -1px;padding-bottom: 1px;}
+.diff_in span {background: #afa;display: inline-block;}
 
 .text-diff {
   padding: 1em;
