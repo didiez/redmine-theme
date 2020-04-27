@@ -592,8 +592,8 @@ div.table-list.boards .table-list-cell.name {width: 30%;}
 .query-columns .buttons input[type=button] {
   display:block;
   margin-bottom: .3rem;
-  height: 32px;
-  width: 32px;
+  height: 30px;
+  width: 30px;
   background-size: 18px;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -601,6 +601,10 @@ div.table-list.boards .table-list-cell.name {width: 30%;}
   color: transparent;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+.query-columns .buttons input[type=button]:hover {
+  background-color: rgba(0,0,0,.12);
 }
 .query-columns .buttons input[type=button].move-right {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQsMTFWMTNIMTZMMTAuNSwxOC41TDExLjkyLDE5LjkyTDE5Ljg0LDEyTDExLjkyLDQuMDhMMTAuNSw1LjVMMTYsMTFINFoiLz48L3N2Zz4=");
