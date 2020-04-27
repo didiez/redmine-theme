@@ -849,7 +849,7 @@ div#issue-changesets p { margin-top: 0; margin-bottom: 1em;}
 div.journal ul.details img {margin:0 0 -3px 4px;}
 div.journal ul.details img[alt="Magnifier"]{display: none;}
 div.journal {overflow: visible;padding: 0;margin-bottom: 1rem;position: relative;}
-div.journal .contextual {display: flex;flex-direction: column-reverse;font-size: .8rem;position: absolute;right: 1rem;top: 1rem;z-index: 1;}
+div.journal .contextual {display: flex;flex-direction: column-reverse;font-size: .8rem;position: absolute;right: 1rem;top: 1rem;z-index: 2;}
 div.journal.time_entry .contextual {flex-direction: column;}
 div.journal .contextual .journal-link {
     font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
