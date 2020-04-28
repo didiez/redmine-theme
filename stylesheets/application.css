@@ -692,7 +692,7 @@ html>body #content > .contextual a.icon-del:before {display:none;}
 html>body.controller-projects #content > .contextual > a {margin-left: .5em;margin-right: .5em;}
 html>body.controller-projects #content > .contextual > a.bookmark {background-image: none;}
 .contextual {position: absolute;white-space: nowrap;line-height:1.4em;right: .5rem;/* top: .5em; */font-size:0.9em;}
-.contextual input, .contextual select {font-size:0.9em;}
+.contextual input, .contextual select {font-size:0.9em;margin-left: .2rem;}
 .message .contextual { margin-top: 0; }
 
 .splitcontent {overflow: auto;display: flex;flex-wrap: wrap;background-color: inherit;}
