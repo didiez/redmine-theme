@@ -441,7 +441,7 @@ tr.entry td.age { text-align: right; }
 tr.entry.file td.filename a { margin-left: 16px; }
 tr.entry.file td.filename_no_report a { margin-left: 16px; }
 
-tr span.expander, .gantt_subjects div > span.expander {background-position: 2px 50%; padding-left: 8px; margin-left: 0; cursor: pointer;}
+tr span.expander, .gantt_subjects div > span.expander {background-position: 2px 50%;padding-left: 8px;margin-left: 8px;cursor: pointer;margin-right: 8px;}
 .gantt_subjects div > span.expander {padding-left: 12px;}
 .gantt_subjects div > span .icon-gravatar {float: none;}
 
@@ -497,8 +497,8 @@ table.plugins span.url { display: block; font-size: 0.9em; }
 
 table.list.enumerations {table-layout: fixed; margin-bottom: 2em;}
 
-tr.group td { padding: 0.8em 0 0.5em 0.3em; border-bottom: 1px solid #ccc; text-align:left; background-color: #fff;}
-tr.group span.count {top:-1px;}
+tr.group td {padding: 0.8em 0 0.8em 0.3em;border-bottom: 1px solid #ccc;text-align:left;background-color: #fff;}
+tr.group span.count {top: 0;font-size: 12px;text-align: center;min-width: 19px;display: inline-block;box-sizing: border-box;}
 tr.group span.name {font-weight:bold;}
 tr.group span.totals {color: #aaa; font-size: 80%;}
 tr.group span.totals .value {font-weight:bold; color:#777;}
@@ -682,14 +682,15 @@ div.square {
 .news > p {display: block;}
 .members > p > a {}
 
-html>body #content > .contextual {position: relative;float: right;/* padding: .5rem 0; */font-size: 1em;display: inline-flex;right: 1rem;}
-html>body.controller-projects #content > .contextual > a {margin-left: .5em;margin-right: .5em;}
-html>body.controller-projects #content > .contextual > a.bookmark {background-image: none;}
-html>body #content > .contextual > a {margin-left: 1em;display: inline-flex;align-items: center;text-decoration: none;padding: 0;font-weight: 700;}
+html>body #content > .contextual {position: relative;float: right;/* padding: .5rem 0; */font-size: 1em;display: inline-flex;right: 1rem;align-items: center;}
+html>body #content > .contextual > a {margin-left: 1em;text-decoration: none;padding: 0;font-weight: 700;}
+html>body #content > .contextual > * {display: inline-flex; align-items: center;}
 html>body #content > .contextual > a:before {position: relative;margin-right: .2em;font-size: 1.6em;margin: 0 .2em 0 0;font-weight: 500;}
 html>body #content > .contextual a.icon-copy, html>body #content > .contextual a.icon-del {font-weight: 400;}
 html>body #content > .contextual a.icon-copy:before,
 html>body #content > .contextual a.icon-del:before {display:none;}
+html>body.controller-projects #content > .contextual > a {margin-left: .5em;margin-right: .5em;}
+html>body.controller-projects #content > .contextual > a.bookmark {background-image: none;}
 .contextual {position: absolute;white-space: nowrap;line-height:1.4em;right: .5rem;/* top: .5em; */font-size:0.9em;}
 .contextual input, .contextual select {font-size:0.9em;}
 .message .contextual { margin-top: 0; }
@@ -2019,12 +2020,13 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
   font-weight:bold;
   font-size: 10px;
   bottom: 2px;
-  padding: 1px 3px;
+  padding: 2px 3px;
   margin-right: 2px;
   margin-left: 2px;
   border-radius: 2px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 .badge-private {
   background: #d22;
