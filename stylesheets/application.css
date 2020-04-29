@@ -1796,7 +1796,7 @@ div.wiki ul, div.wiki ol {margin-bottom:1em;}
 div.wiki li>ul, div.wiki li>ol {margin-bottom: 0;}
 
 div.wiki pre {
-  margin: 1em 1em 1em 1.6em;
+  margin: 1em 1em 1em 1em;
   padding: 8px;
   background-color: #fdfdfd;
   border: 1px solid #e2e2e2;
@@ -1804,6 +1804,7 @@ div.wiki pre {
   width:auto;
   overflow-x: auto;
   overflow-y: hidden;
+  position: relative;
 }
 div.wiki pre > code {
   padding: 0;
