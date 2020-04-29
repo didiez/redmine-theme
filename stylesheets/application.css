@@ -1810,8 +1810,7 @@ div.wiki pre > code {
 }
 
 div.wiki pre.dark, 
-div.wiki pre.dark > code,
-div.wiki pre > code.dark {
+div.wiki pre.dark > code {
   background-color: #444444;
   color: #eeeeee;
   border-color: #000;
