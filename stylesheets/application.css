@@ -1806,6 +1806,12 @@ div.wiki pre {
   overflow-y: hidden;
 }
 
+div.wiki pre.dark, 
+div.wiki pre.dark > code  {
+  background-color: #444444;
+  color: #eeeeee;
+  border-color: #000;
+}
 
 
 div.wiki *:not(pre)>code, div.wiki>code {
