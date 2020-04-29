@@ -1808,6 +1808,8 @@ div.wiki pre {
 div.wiki pre > code {
   padding: 0;
 }
+/* language label top-right corner */
+div.wiki pre > code.java:before {content: "java";position: absolute;top: 0px;right: 0px;padding: .2rem .4rem;background-color: rgba(0,0,0, .12);font-weight: bold;}
 
 div.wiki pre.dark, 
 div.wiki pre.dark > code {
