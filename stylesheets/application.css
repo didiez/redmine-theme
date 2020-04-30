@@ -773,6 +773,8 @@ div.issue #relations .issues tr {border-top: none;}
 div.issue #relations .issues td {/* padding: .5em; */}
 div.issue > .contextual {position: absolute;right: 1rem;z-index: 2;}
 div.issue .description .icon-comment:before {content:"format_quote";font-size: 1.3rem;line-height: 1rem;margin-left: -.3rem;display: inline-block;}
+div.issue > .attachments > .contextual {margin-top: -2.1rem;}
+div.issue > .attachments > .contextual .icon-only:before {font-size: 20px;line-height: 20px;margin: 0;top: 2px;left: 2px;}
 div.issue .attachments td {display: inline-flex;align-items:center;padding:0;/* margin-right: .5rem; */}
 div.issue .attachments td > * {margin-right: .5rem; line-height: 24px;}
 div.issue .attachments td > a.icon-attachment {padding-left: 1.8rem;}
@@ -1792,7 +1794,7 @@ div.wiki-page {padding: 1rem;margin: 1rem 0;background: #fff;box-shadow: 0 3px 1
 div.wiki a {word-wrap: break-word;}
 div.wiki a.new {color: #b73535;}
 
-div.wiki ul, div.wiki ol {margin-bottom:1em;}
+div.wiki ul, div.wiki ol {margin-top: 0; margin-bottom:1em;}
 div.wiki li>ul, div.wiki li>ol {margin-bottom: 0;}
 
 div.wiki pre {
