@@ -1459,7 +1459,7 @@ div.fileover { background-color: lavender; }
 
 div.attachments p { margin:4px 0 2px 0; }
 div.attachments img { vertical-align: middle; }
-div.attachments span.author { font-size: 0.9em; color: #888; }
+div.attachments span.author { font-size: 0.9em; color: #888; margin-left: .5rem;}
 
 div.thumbnails {margin:0.6em;}
 div.thumbnails div {background:#fff;border:2px solid #ddd;display:inline-block;margin-right:2px;}
