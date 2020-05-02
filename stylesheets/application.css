@@ -453,7 +453,7 @@ tr.entry td.age { text-align: right; }
 tr.entry.file td.filename a { margin-left: 16px; }
 tr.entry.file td.filename_no_report a { margin-left: 16px; }
 
-tr span.expander, .gantt_subjects div > span.expander {background-position: 2px 50%; padding-left: 8px; margin-left: 0; cursor: pointer;}
+tr span.expander, .gantt_subjects div > span.expander {background-position: 2px 50%;padding-left: 8px;margin-left: 8px;cursor: pointer;margin-right: 8px;}
 .gantt_subjects div > span.expander {padding-left: 12px;}
 .gantt_subjects div > span .icon-gravatar {float: none;}
 
@@ -509,8 +509,8 @@ table.plugins span.url { display: block; font-size: 0.9em; }
 
 table.list.enumerations {table-layout: fixed; margin-bottom: 2em;}
 
-tr.group td { padding: 0.8em 0 0.5em 0.3em; border-bottom: 1px solid #ccc; text-align:left; background-color: #fff;}
-tr.group span.count {top:-1px;}
+tr.group td {padding: 0.8em 0 0.8em 0.3em;border-bottom: 1px solid #ccc;text-align:left;background-color: #fff;}
+tr.group span.count {top: 0;font-size: 12px;text-align: center;min-width: 19px;display: inline-block;box-sizing: border-box;}
 tr.group span.name {font-weight:bold;}
 tr.group span.totals {color: #aaa; font-size: 80%;}
 tr.group span.totals .value {font-weight:bold; color:#777;}
@@ -694,16 +694,17 @@ div.square {
 .news > p {display: block;}
 .members > p > a {}
 
-html>body #content > .contextual {position: relative;float: right;/* padding: .5rem 0; */font-size: 1em;display: inline-flex;right: 1rem;}
-html>body.controller-projects #content > .contextual > a {margin-left: .5em;margin-right: .5em;}
-html>body.controller-projects #content > .contextual > a.bookmark {background-image: none;}
-html>body #content > .contextual > a {margin-left: 1em;display: inline-flex;align-items: center;text-decoration: none;padding: 0;font-weight: 700;}
+html>body #content > .contextual {position: relative;float: right;/* padding: .5rem 0; */font-size: 1em;display: inline-flex;right: 1rem;align-items: center;}
+html>body #content > .contextual > a {margin-left: 1em;text-decoration: none;padding: 0;font-weight: 700;}
+html>body #content > .contextual > * {display: inline-flex; align-items: center;}
 html>body #content > .contextual > a:before {position: relative;margin-right: .2em;font-size: 1.6em;margin: 0 .2em 0 0;font-weight: 500;}
 html>body #content > .contextual a.icon-copy, html>body #content > .contextual a.icon-del {font-weight: 400;}
 html>body #content > .contextual a.icon-copy:before,
 html>body #content > .contextual a.icon-del:before {display:none;}
+html>body.controller-projects #content > .contextual > a {margin-left: .5em;margin-right: .5em;}
+html>body.controller-projects #content > .contextual > a.bookmark {background-image: none;}
 .contextual {position: absolute;white-space: nowrap;line-height:1.4em;right: .5rem;/* top: .5em; */font-size:0.9em;}
-.contextual input, .contextual select {font-size:0.9em;}
+.contextual input, .contextual select {font-size:0.9em;margin-left: .2rem;}
 .message .contextual { margin-top: 0; }
 
 .splitcontent {overflow: auto;display: flex;flex-wrap: wrap;background-color: inherit;}
@@ -784,6 +785,8 @@ div.issue #relations .issues tr {border-top: none;}
 div.issue #relations .issues td {/* padding: .5em; */}
 div.issue > .contextual {position: absolute;right: 1rem;z-index: 2;}
 div.issue .description .icon-comment:before {content:"format_quote";font-size: 1.3rem;line-height: 1rem;margin-left: -.3rem;display: inline-block;}
+div.issue > .attachments > .contextual {margin-top: -2.1rem;}
+div.issue > .attachments > .contextual .icon-only:before {font-size: 20px;line-height: 20px;margin: 0;top: 2px;left: 2px;}
 div.issue .attachments td {display: inline-flex;align-items:center;padding:0;/* margin-right: .5rem; */}
 div.issue .attachments td > * {margin-right: .5rem; line-height: 24px;}
 div.issue .attachments td > a.icon-attachment {padding-left: 1.8rem;}
@@ -1468,7 +1471,7 @@ div.fileover { background-color: lavender; }
 
 div.attachments p { margin:4px 0 2px 0; }
 div.attachments img { vertical-align: middle; }
-div.attachments span.author { font-size: 0.9em; color: #888; }
+div.attachments span.author { font-size: 0.9em; color: #888; margin-left: .5rem;}
 
 div.thumbnails {margin:0.6em;}
 div.thumbnails div {background:#fff;border:2px solid #ddd;display:inline-block;margin-right:2px;}
@@ -1803,11 +1806,11 @@ div.wiki-page {padding: 1rem;margin: 1rem 0;background: #fff;box-shadow: 0 3px 1
 div.wiki a {word-wrap: break-word;}
 div.wiki a.new {color: #b73535;}
 
-div.wiki ul, div.wiki ol {margin-bottom:1em;}
+div.wiki ul, div.wiki ol {margin-top: 0; margin-bottom:1em;}
 div.wiki li>ul, div.wiki li>ol {margin-bottom: 0;}
 
 div.wiki pre {
-  margin: 1em 1em 1em 1.6em;
+  margin: 1em 1em 1em 1em;
   padding: 8px;
   background-color: #fdfdfd;
   border: 1px solid #e2e2e2;
@@ -1815,8 +1818,20 @@ div.wiki pre {
   width:auto;
   overflow-x: auto;
   overflow-y: hidden;
+  position: relative;
 }
+div.wiki pre > code {
+  padding: 0;
+}
+/* language label top-right corner */
+div.wiki pre > code.java:before {content: "java";position: absolute;top: 0px;right: 0px;padding: .2rem .4rem;background-color: rgba(0,0,0, .12);font-weight: bold;}
 
+div.wiki pre.dark, 
+div.wiki pre.dark > code {
+  background-color: #444444;
+  color: #eeeeee;
+  border-color: #000;
+}
 
 
 div.wiki *:not(pre)>code, div.wiki>code {
@@ -2031,12 +2046,13 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
   font-weight:bold;
   font-size: 10px;
   bottom: 2px;
-  padding: 1px 3px;
+  padding: 2px 3px;
   margin-right: 2px;
   margin-left: 2px;
   border-radius: 2px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 .badge-private {
   background: #d22;
