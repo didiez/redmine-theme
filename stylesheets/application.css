@@ -1034,7 +1034,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
 div#activity {background-color: inherit;overflow: auto;}
 div#activity dl:before {content: "";border-left: 2px solid #000;height: 100%;display: block;width: 0;position: absolute;left: .6em;}
 div#activity dl, #search-results {margin-left: 2em;position: relative;background-color: inherit;}
-div#activity dd, #search-results dd {margin-bottom: 1em;padding-left: 18px;font-size: 0.9em;margin-left: 4.5rem;}
+div#activity dd, #search-results dd {margin-bottom: 1em;padding-left: 18px;font-size: 0.9em;margin-left: 4.7rem;}
 div#activity dt, #search-results dt {margin-bottom: 0px;padding-left: 1.5rem;line-height: 18px;background-position: 0 0;background-repeat: no-repeat;position: relative;background-color: inherit;z-index: 1;}
 div#activity dt.me .time {/* border-bottom: 1px solid #999; */}
 div#activity dt .time {color: #000;position: absolute;left: -0.8em;font-size: .7rem;font-family: "Roboto Mono";font-weight: 700;background: inherit;z-index: 0;top: 24px;}
@@ -2288,7 +2288,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 h2 img.gravatar, h3 img.gravatar {margin-right: 4px;}
 h4 img.gravatar {/* margin: -2px 4px -4px 0; */height: 24px;width: 24px;}
 td.username img.gravatar {margin: 0 0.5em 0 0; vertical-align: top;}
-#activity dt img.gravatar {float: left;margin: 0 1rem 1rem 0;margin-left: 1rem;height: 24px; width: 24px; position: absolute;}
+#activity dt img.gravatar {float: left;margin: 0 1rem 1rem 0;margin-left: 1rem;height: 24px; width: 24px; position: relative;}
 /* para mostrar un placeholder del avatar cuando no tiene o no es un usuario conocido */
 body.avatars-on #activity dt:before { 
   content: "";
