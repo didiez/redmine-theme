@@ -1042,7 +1042,7 @@ div#activity dd .description, #search-results dd .description { font-style: ital
 div#activity span.project:after, #search-results span.project:after {/* content: ""; */}
 div#activity dd span.description, #search-results dd span.description {display:block;color: rgba(0,0,0,.6);}
 div#activity dt.grouped {margin-left: 4rem;}
-div#activity dd.grouped {margin-left: 8.5rem;}
+div#activity dd.grouped {margin-left: 8.7rem;}
 div#activity dd.grouped + dt:not(.grouped) {margin-top: 2em}
 #activity h3 {
     background: inherit;
@@ -1054,7 +1054,14 @@ div#activity dd.grouped + dt:not(.grouped) {margin-top: 2em}
     color: #000;
 }
 .controller-search #search-results dt, .controller-search #search-results dd {padding-left: 2.5rem;}
-
+div#activity dt span.project, dt span.project + a {
+  margin-left: 1rem;
+  display: block;
+}
+body.avatars-on div#activity dt > span.project, body.avatars-on dt > a {
+  margin-left: 4.2rem;
+  display: table;
+}
 span.project {
     border: 1px solid;
     padding: 0px 4px 0;
@@ -2281,7 +2288,20 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 h2 img.gravatar, h3 img.gravatar {margin-right: 4px;}
 h4 img.gravatar {/* margin: -2px 4px -4px 0; */height: 24px;width: 24px;}
 td.username img.gravatar {margin: 0 0.5em 0 0; vertical-align: top;}
-#activity dt img.gravatar {float: left;margin: 0 1rem 1rem 0;margin-left: 1rem;}
+#activity dt img.gravatar {float: left;margin: 0 1rem 1rem 0;margin-left: 1rem;height: 24px; width: 24px; position: absolute;}
+/* para mostrar un placeholder del avatar cuando no tiene o no es un usuario conocido */
+body.avatars-on #activity dt:before { 
+  content: "";
+  height: 36px;
+  width: 36px;
+  background: rgba(0,0,0,.12);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 2.5rem;
+  margin: 0;
+  z-index: 0;
+}
 /* Used on 12px Gravatar img tags without the icon background */
 .icon-gravatar {float: left; margin-right: 4px;}
 
