@@ -1909,8 +1909,8 @@ div.wiki img {vertical-align:middle; max-width:100%;}
     overflow: visible;
     margin-top: 1.5rem;
 }
-#my-page  .block-receiver {
-  min-height: .1px; /* para poder elementos a block-receiver vacios */
+#my-page .block-receiver {
+  min-height: .5rem; /* para poder mover elementos a block-receiver vacios */
 }
 
 .dragging .ui-sortable-placeholder {
