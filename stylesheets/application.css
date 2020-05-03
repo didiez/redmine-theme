@@ -164,13 +164,14 @@ html>body #content > h2 {line-height: 1.25rem;}
 html>body.action-login #top-menu, html>body.action-login #header, html>body.action-login #footer {display: none;}
 html>body.action-login #main {padding: 0;}
 html>body.action-login #content {display: flex;min-height: unset;padding: 0;margin: 0;}
-html>body.action-login #content #login-form {flex: 1;display: flex;align-items: center;justify-content: center;margin: 0;padding: 2rem;border: none;border-radius: 0;background: none;}
+html>body.action-login #content #login-form {flex: 1;display: flex;align-items: center;justify-content: center;margin: 0;padding: 0;border: none;border-radius: 0;background: none;}
 html>body.action-login #content:before {content: "";display: flex;flex: 1;height: 100%;background-image: url('../images/login-bg.jpg');background-size: cover;background-position: center;height: 100%;}
 html>body.action-login #content #login-form > form {width: 250px;display: block;margin-top: -3%;}
 html>body.action-login #content #login-form > form:before {content:"";display: block;width: 250px;height: 84px;background: url("../images/dialnet-redmine.svg");background-repeat: no-repeat;background-position: center;margin-bottom: 1rem;}
 html>body.action-login #content #login-form input {height: 2.25rem;}
 html>body.action-login #content #login-form input[type=submit] {text-transform: uppercase;font-weight: 500;width: auto;padding: 0 1rem;height: 2rem;margin-top: 1rem;border: none;background: #1a7700;color: #fff;border-radius: .3em;}
 html>body.action-login #content #login-form input[type=submit]:hover, html>body.action-login #content #login-form input[type=submit]:focus {background: #145c00}
+html>body.action-login #content div.flash.error {position: absolute; top: 0; right: 0; background: rgba(0,0,0,.04); color: #d32f2f; font-weight: 500; border: 2px solid; /* border-top: 1rem solid; */ padding: .5rem .8rem; margin: 1rem}
 
 div.modal { border-radius:5px; background:#fff; z-index:50; padding:4px;}
 div.modal h3.title {display:none;}
