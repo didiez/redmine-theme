@@ -731,7 +731,7 @@ html>body.controller-projects #content > .contextual > a.bookmark {background-im
 .message .contextual { margin-top: 0; }
 
 .splitcontent {overflow: auto;display: flex;flex-wrap: wrap;background-color: inherit;}
-.splitcontentleft {flex: 1;margin-right: .5rem;}
+.splitcontentleft {flex: 1;margin-right: .5rem;background-color: inherit;}
 .splitcontentright {flex: 1;margin-left: .5rem;background-color: inherit;}
 .splitcontenttop {flex: 2; flex-basis: 100%;background-color: inherit;}
 
