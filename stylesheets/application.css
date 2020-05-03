@@ -191,8 +191,22 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited { color: #999; text-
 a.project.closed, a.project.closed:link, a.project.closed:visited { color: #999; }
 a.user.locked, a.user.locked:link, a.user.locked:visited {color: #999;}
 
-#sidebar a.selected {line-height:1.7em;padding: 0;margin-left:-2px;font-weight: 700;color: #116699;border-radius:2px;/* text-decoration: underline; */}
+#sidebar a.selected {line-height:1.7em;padding: 0;margin-left:-2px;font-weight: 500;color: #116699;border-radius:2px;/* text-decoration: underline; */background: #116699;color: #fff;padding: 0 1.5rem 0 .4rem;border-radius: 5px;}
 #sidebar a.selected:hover {text-decoration:none;}
+#sidebar a.selected + a.icon-clear-query {
+  background-image: none;
+  margin-left: -1.2rem;
+  opacity: .8;
+  width: 1rem;
+}
+#sidebar a.selected + a.icon-clear-query:before {
+  content:"close";
+  font-family: "Material Icons";
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
 #admin-menu a {line-height:1.7em;}
 #admin-menu a.selected {padding-left: 20px !important; background-position: 2px 40%;}
 
