@@ -153,7 +153,7 @@ html>body #content > h2 {line-height: 1.25rem;}
 #footer {clear: both;border-top: 1px solid #bbb;font-size: 0.9em;color: #aaa;padding: 5px;text-align:center;background:#fff;display: none;}
 
 #login-form {margin:5em auto 2em auto; padding:20px; width:340px; border:1px solid #FDBF3B; background-color:#FFEBC1; border-radius:4px; box-sizing: border-box;}
-#login-form label {display:block; margin-bottom:5px; font-weight:bold;}
+#login-form label {display:block; margin-bottom:.3125rem; font-weight:bold;}
 #login-form label[for=autologin] {font-weight:normal;}
 #login-form input {height: 29px;}
 #login-form input[type=text], #login-form input[type=password], #login-form input[type=submit] {display: block; width: 100%;}
@@ -162,17 +162,24 @@ html>body #content > h2 {line-height: 1.25rem;}
 #login-form input#openid_url {background:#fff url(../images/openid-bg.gif) no-repeat 4px 50%; padding-left:24px !important;}
 
 html>body.action-login #top-menu, html>body.action-login #header, html>body.action-login #footer {display: none;}
-html>body.action-login #main {padding: 0;}
-html>body.action-login #content {display: flex;min-height: unset;padding: 0;margin: 0;}
+html>body.action-login #main {padding: 0;display: flex;flex-direction: row;}
+html>body.action-login #content {display: flex;flex: 1;min-height: unset;padding: 0;margin: 0;flex-direction: column;justify-content: center;align-items: center;}
 html>body.action-login #content #login-form {flex: 1;display: flex;align-items: center;justify-content: center;margin: 0;padding: 0;border: none;border-radius: 0;background: none;}
-html>body.action-login #content:before {content: "";display: flex;flex: 1;height: 100%;background-image: url('../images/login-bg.jpg');background-size: cover;background-position: center;height: 100%;}
-html>body.action-login #content #login-form > form {width: 250px;display: block;margin-top: -3%;}
-html>body.action-login #content #login-form > form:before {content:"";display: block;width: 250px;height: 84px;background: url("../images/dialnet-redmine.svg");background-repeat: no-repeat;background-position: center;margin-bottom: 1rem;}
+html>body.action-login #main:before {content: "";display: flex;flex: 1;height: 100vh;background-image: url('../images/login-bg.jpg');background-size: cover;background-position: center;}
+html>body.action-login #content #login-form > form {width: 250px;display: block;/* margin-top: -3%; */}
+html>body.action-login #content #login-form > form:before {content:"";display: block;width: 250px;height: 6.25rem;background: url("../images/dialnet-redmine.svg");background-repeat: no-repeat;background-position: center;}
 html>body.action-login #content #login-form input {height: 2.25rem;}
 html>body.action-login #content #login-form input[type=submit] {text-transform: uppercase;font-weight: 500;width: auto;padding: 0 1rem;height: 2rem;margin-top: 1rem;border: none;background: #1a7700;color: #fff;border-radius: .3em;}
 html>body.action-login #content #login-form input[type=submit]:hover, html>body.action-login #content #login-form input[type=submit]:focus {background: #145c00}
-html>body.action-login #content div.flash.error {position: absolute;top: 50%;left: 75%;background: none;color: #d32f2f;font-weight: 500;padding: 0;margin: 0;border: 0;margin-left: -125px;margin-top: -3%;font-size: .8rem;line-height: 130px;}
+html>body.action-login #content div.flash.error {position: absolute;top: 50%;left: 75%;background: none;color: #d32f2f;font-weight: 500;padding: 0;margin: 0;border: 0;margin-left: -125px;margin-top: .7rem;font-size: .8rem;line-height: 1.5rem;}
 html>body.action-login #content div.flash.error + #login-form input[name=username] {border-bottom: 2px solid #d32f2f;margin-bottom: 1.75rem;}
+
+html>body.action-login #content #errorExplanation {background: none;color: #d32f2f;font-weight: 500;padding: 0;margin: 0;border: 0;margin-bottom: 1rem;}
+
+@media(max-width: 600px) {
+  html>body.action-login #content:before {display: none;}
+  html>body.action-login #content div.flash.error {left: 50%;}
+}
 
 div.modal { border-radius:5px; background:#fff; z-index:50; padding:4px;}
 div.modal h3.title {display:none;}
@@ -1900,8 +1907,12 @@ div.wiki img {vertical-align:middle; max-width:100%;}
 /***** My page layout *****/
 #my-page {
     overflow: visible;
-    margin-top: 0;
+    margin-top: 1.5rem;
 }
+#my-page  .block-receiver {
+  min-height: .1px; /* para poder elementos a block-receiver vacios */
+}
+
 .dragging .ui-sortable-placeholder {
   border:2px dashed #999;
   border-radius: 5px;
@@ -1913,7 +1924,7 @@ div.wiki img {vertical-align:middle; max-width:100%;}
   color:#505050;
   border-radius: 3px;
   position: relative;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 2rem;
   background-color: inherit;
 }
