@@ -1058,7 +1058,7 @@ div#activity dt span.project, dt span.project + a {
   margin-left: 1rem;
   display: block;
 }
-body.avatars-on div#activity dt > span.project, body.avatars-on dt > a {
+body.avatars-on div#activity dt > span.project, body.avatars-on div#activity dt > a {
   margin-left: 4.2rem;
   display: table;
 }
