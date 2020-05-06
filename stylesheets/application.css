@@ -143,7 +143,7 @@ body:not([class^="project-"]) #header h1 {
 
 #watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;width: 24px;margin: 0;}
 
-#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: auto;}
+#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: visible;}
 html>body #content { min-height: 600px; }
 html>body #content > h2 {line-height: 1.25rem;}
 * html body #content { height: 600px; } /* IE */
@@ -321,6 +321,8 @@ div + .drdn-items {border-top:1px solid #ccc;}
 /***** Tables *****/
 table.list, .table-list {border: none;border-collapse: collapse;width: 100%;margin-bottom: 1rem;background: #fff;border-radius: 5px;overflow: hidden;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);}
 table.list tbody tr {border-top: 1px solid rgba(0,0,0,.12);}
+table.list thead tr:last-child {border-bottom: 1px solid rgba(0,0,0,.12);}
+table.list tbody tr:first-child {border-top: none}
 table.list th, .table-list-header {background-color: transparent;padding: .8rem 1rem;white-space:nowrap;border: 0;}
 table.list th a.icon {padding-left: 0;}
 table.list th a {padding-right: 16px;}
@@ -1032,7 +1034,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
 
 #history p.nodata {display: none;}
 
-div#activity {background-color: inherit;overflow: auto;}
+div#activity {background-color: inherit;overflow: visible;}
 div#activity dl:before {content: "";border-left: 2px solid #000;height: 100%;display: block;width: 0;position: absolute;left: .6em;}
 div#activity dl, #search-results {margin-left: 2em;position: relative;background-color: inherit;}
 div#activity dd, #search-results dd {margin-bottom: 1em;padding-left: 18px;font-size: 0.9em;margin-left: 4.7rem;}
