@@ -989,22 +989,22 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   border: 0;
 }
 
-/* Hacks para aÃ±adir un espaciado superior a los elementos usados como ancla (#hash), en css :target */
+/* Hacks para añadir un espaciado superior a los elementos usados como ancla (#hash), en css :target */
 /* :target puede ser #note-1 o #change-32742 (wrapper div) */
 /* START TARGET_ANCHOR_SPACING */
 #history div.has-details:target > div,
 #history div.has-notes:target > div,
 #history div:not(.has-details):not(.has-notes):target {
   background: transparent;
-  padding-top: 1rem;
-  margin-top: -1rem;
+  padding-top: .9rem;
+  margin-top: -.9rem;
   border-color: transparent;
 }
 #history div.journal.changeset:target {overflow: visible;}
 #history div.has-details:target > div .contextual,
 #history div.has-notes:target > div > .contextual,
 #history div:not(.has-details):not(.has-notes):target .contextual {
-  top: 2rem;
+  top: 1.9rem;
 }
 #history div.has-details:target > div > *:not(.contextual),
 #history div.has-notes:target > div > *:not(.contextual),
@@ -1024,7 +1024,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
   border: 2px solid #2188ff;
   background-color: #fff;
   box-sizing: border-box;
-  height: calc(100% - 1rem);
+  height: calc(100% - .9rem);
   margin: -1px;
 }
 /* END TARGET_ANCHOR_SPACING */
