@@ -143,7 +143,7 @@ body:not([class^="project-"]) #header h1 {
 
 #watchers a.delete:before {margin-left: 0;font-size: 16px;text-align: center;width: 24px;margin: 0;}
 
-#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: visible;}
+#content {flex-grow: 1;background-color: inherit;margin: 0px;padding: 1rem;overflow-x: auto;overflow-y: visible;}
 html>body #content { min-height: 600px; }
 html>body #content > h2 {line-height: 1.25rem;}
 * html body #content { height: 600px; } /* IE */
