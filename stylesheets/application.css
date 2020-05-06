@@ -324,6 +324,7 @@ table.list tbody tr {border-top: 1px solid rgba(0,0,0,.12);}
 table.list th, .table-list-header {background-color: transparent;padding: .8rem 1rem;white-space:nowrap;border: 0;}
 table.list th a.icon {padding-left: 0;}
 table.list th a {padding-right: 16px;}
+table.list th a.icon-package {padding-left: 24px;display: inline-block;line-height: 16px;}
 table.list td {vertical-align: middle;padding: .8rem 1rem;border: 0;}
 table.list td.id {width: 2%;text-align: center;font-family: "Roboto Mono";}
 table.list td.name, table.list td.description, table.list td.subject, table.list td.comments, table.list td.roles, table.list td.attachments, table.list td.text,  table.list td.short_description {text-align: left;}
@@ -2214,7 +2215,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-multiple { background-image: url(../images/table_multiple.png); }
 .icon-folder { background-image: url(../images/folder.png); }
 .open .icon-folder { background-image: url(../images/folder_open.png); }
-.icon-package {background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxLDE2LjVDMjEsMTYuODggMjAuNzksMTcuMjEgMjAuNDcsMTcuMzhMMTIuNTcsMjEuODJDMTIuNDEsMjEuOTQgMTIuMjEsMjIgMTIsMjJDMTEuNzksMjIgMTEuNTksMjEuOTQgMTEuNDMsMjEuODJMMy41MywxNy4zOEMzLjIxLDE3LjIxIDMsMTYuODggMywxNi41VjcuNUMzLDcuMTIgMy4yMSw2Ljc5IDMuNTMsNi42MkwxMS40MywyLjE4QzExLjU5LDIuMDYgMTEuNzksMiAxMiwyQzEyLjIxLDIgMTIuNDEsMi4wNiAxMi41NywyLjE4TDIwLjQ3LDYuNjJDMjAuNzksNi43OSAyMSw3LjEyIDIxLDcuNVYxNi41TTEyLDQuMTVMMTAuMTEsNS4yMkwxNiw4LjYxTDE3Ljk2LDcuNUwxMiw0LjE1TTYuMDQsNy41TDEyLDEwLjg1TDEzLjk2LDkuNzVMOC4wOCw2LjM1TDYuMDQsNy41TTUsMTUuOTFMMTEsMTkuMjlWMTIuNThMNSw5LjIxVjE1LjkxTTE5LDE1LjkxVjkuMjFMMTMsMTIuNThWMTkuMjlMMTksMTUuOTFaIi8+PC9zdmc+);font-size: 1em;}
+.icon-package {background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUuMTIsNUgxOC44N0wxNy45Myw0SDUuOTNMNS4xMiw1TTIwLjU0LDUuMjNDMjAuODMsNS41NyAyMSw2IDIxLDYuNVYxOUEyLDIgMCAwLDEgMTksMjFINUEyLDIgMCAwLDEgMywxOVY2LjVDMyw2IDMuMTcsNS41NyAzLjQ2LDUuMjNMNC44NCwzLjU1QzUuMTIsMy4yMSA1LjUzLDMgNiwzSDE4QzE4LjQ3LDMgMTguODgsMy4yMSAxOS4xNSwzLjU1TDIwLjU0LDUuMjNNNiwxOEgxMlYxNUg2VjE4WiIvPjwvc3ZnPg==');font-size: 1em;}
 .icon-user {background-image: url(../images/user.png);}
 .icon-project, .icon-projects { background-image: url(../images/projects.png); }
 .icon-help { background-image: url(../images/help.png); }
