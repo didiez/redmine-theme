@@ -1831,10 +1831,61 @@ div.wiki .external {
   padding-left: 12px;
   background-image: url(../images/external.png);
 }
-
-div.wiki-page {padding: 1rem;margin: 1rem 0;background: #fff;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);}
+p.breadcrumb + div.wiki-page {margin-top: 1rem;}
+div.wiki-page {padding: 1rem;margin: 2.2rem 0 1rem;background: #fff;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);}
 div.wiki a {word-wrap: break-word;}
 div.wiki a.new {color: #b73535;}
+
+div.wiki-page + fieldset {
+  padding: 2.5rem 1rem 1rem;
+  background: #fff;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+div.wiki-page + fieldset.collapsed {padding-top: 1.5rem}
+div.wiki-page + fieldset > legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: .8rem 2.2rem;
+  display: block;
+  background-position: 1rem;
+}
+div.wiki-page + fieldset > div {
+  display: block !important;
+}
+
+div.wiki-page + fieldset > div > .attachments {
+  /* display: flex; */
+  /* align-items: center; */
+}
+div.wiki-page + fieldset > div > .attachments tr {display: flex; align-items: center;}
+div.wiki-page + fieldset > div > .attachments td {display: inline-flex;align-items: center;}
+div.wiki-page + fieldset > div > .attachments td > * {
+    margin-right: .5rem;
+    line-height: 24px;
+}
+div.wiki-page + fieldset > div > .attachments td > .icon-attachment {
+    padding-left: 1.5rem;
+}
+div.wiki-page + fieldset > div > .attachments td > .icon-attachment:before {
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-left: -1.5rem;
+}
+div.wiki-page + fieldset > div > .attachments td > .icon-only {position: relative;margin-right: 0;}
+div.wiki-page + fieldset > div > .attachments td > .icon-only:before {
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+    top: 3px;
+    left: 3px;
+    margin: 0;
+}
 
 div.wiki ul, div.wiki ol {margin-top: 0; margin-bottom:1em;}
 div.wiki li>ul, div.wiki li>ol {margin-bottom: 0;}
