@@ -1034,7 +1034,7 @@ div.journal div.wiki p:last-child {margin-bottom:0;}
 
 #history p.nodata {display: none;}
 
-div#activity {background-color: inherit;overflow: visible;}
+div#activity {background-color: inherit;overflow: hidden;}
 div#activity dl:before {content: "";border-left: 2px solid #000;height: 100%;display: block;width: 0;position: absolute;left: .6em;}
 div#activity dl, #search-results {margin-left: 2em;position: relative;background-color: inherit;}
 div#activity dd, #search-results dd {margin-bottom: 1em;padding-left: 18px;font-size: 0.9em;margin-left: 4.7rem;}
