@@ -466,11 +466,19 @@ tr.issue.idnt-7 td.subject, tr.project.idnt-7 td.name {padding-left: 120px; back
 tr.issue.idnt-8 td.subject, tr.project.idnt-8 td.name {padding-left: 136px; background-position: 120px 50%;}
 tr.issue.idnt-9 td.subject, tr.project.idnt-9 td.name {padding-left: 152px; background-position: 136px 50%;}
 
-.issues > h3 {display: flex;align-items: center;padding-left: 0;}
-.issues .icon-zoom-in:before {content: "insert_chart_outlined";font-family:"Material Icons";font-size: 24px;font-weight: normal;line-height: 24px;}
+.issues > h3 {display: flex;align-items: center;padding-left: 2rem;}
+.issues > h3.icon-issue:after {content: "";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMsNlYyMkgyMVYyNEgzQTIsMiAwIDAsMSAxLDIyVjZIM00xNiw5SDIxLjVMMTYsMy41VjlNNywySDE3TDIzLDhWMThBMiwyIDAgMCwxIDIxLDIwSDdDNS44OSwyMCA1LDE5LjEgNSwxOFY0QTIsMiAwIDAsMSA3LDJNNyw0VjE4SDIxVjExSDE0VjRIN1oiLz48L3N2Zz4=");height: 24px;width: 24px;position: absolute;left: 0;top: -1px;}
+.issues > h3.icon-issue:before {content:"";background-color: #fbd249;height: 18px;width: 18px;position: absolute;left: 5px;top: 1px;border-radius: 2px 10px 2px 2px;}
+.issues .icon-zoom-in:before {content: "insert_chart_outlined";font-family:"Material Icons";font-size: 20px;font-weight: normal;line-height: 24px;}
 table.issue-report {table-layout:fixed;}
 table.issue-report th, table.issue-report td {text-align: right;}
 .issue-report-graph {width: 75%; margin: 2em 0;}
+
+.spent_time > h3.icon-time {padding-left: 2rem;position: relative;line-height: 24px;}
+.spent_time > h3.icon-time:before {content: "";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxIDExLjExVjdBMiAyIDAgMCAwIDE5IDVIMTVWM0EyIDIgMCAwIDAgMTMgMUg5QTIgMiAwIDAgMCA3IDNWNUgzQTIgMiAwIDAgMCAxIDdWMThBMiAyIDAgMCAwIDMgMjBIMTAuMjZBNyA3IDAgMSAwIDIxIDExLjExTTkgM0gxM1Y1SDlNMTkgMjBBNSA1IDAgMCAxIDEzIDIwQTUgNSAwIDEgMSAxOSAyME0xNSAxM0gxNi41VjE1LjgyTDE4Ljk0IDE3LjIzTDE4LjE5IDE4LjUzTDE1IDE2LjY5VjEzIi8+PC9zdmc+");position: absolute;width: 24px;height: 24px;left: 0;top: 0;margin: 0;font-weight: 500;}
+
+.members > h3.icon-group {background-image: none;line-height: 24px;padding-left: 2rem;}
+.members > h3.icon-group:before {content:"people";font-family:"Material Icons";font-size: 24px;line-height: 24px;position: absolute;left: 0;top: 0;}
 
 tr.entry { border: 1px solid #f8f8f8; }
 tr.entry td { white-space: nowrap; }
