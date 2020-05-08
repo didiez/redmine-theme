@@ -546,7 +546,7 @@ table.plugins span.url { display: block; font-size: 0.9em; }
 
 table.list.enumerations {table-layout: fixed; margin-bottom: 2em;}
 
-tr.group td {padding: 0.8em 0 0.8em 0.3em;border-bottom: 1px solid #ccc;text-align:left;background-color: #fff;}
+tr.group td {padding: 0.8em 0 0.8em 0.3em;border-bottom: 1px solid #ccc;text-align:left;background-color: #fff; line-height: 1rem;}
 tr.group span.count {top: 0;font-size: 12px;text-align: center;min-width: 19px;display: inline-block;box-sizing: border-box;}
 tr.group span.name {font-weight:bold;}
 tr.group span.totals {color: #aaa; font-size: 80%;}
@@ -2209,7 +2209,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
   padding: 2px 3px;
   margin-right: 2px;
   margin-left: 2px;
-  border-radius: 2px;
+  border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
