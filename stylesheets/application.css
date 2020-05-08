@@ -1603,7 +1603,29 @@ div.flash.notice {
   background: url(../images/true.png) 8px 5px no-repeat;
   background-color: #dfffdf;
   border-color: #9fcf9f;
-  color: #005f00;
+  color: #000;
+  background-image: none;
+  border: 2px solid #71c341;
+  background: #fff;
+  position: relative;
+  padding: .5rem 1rem .5rem 3.5rem;
+  font-weight: 500;
+  display: table;
+}
+div.flash.notice:before {
+    content: "check";
+    font-family: "Material Icons";
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    width: 2.5rem;
+    height: 100%;
+    line-height: 34px;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    background: #71c341;
+    color: #fff;
 }
 
 div.flash.warning, .conflict {
