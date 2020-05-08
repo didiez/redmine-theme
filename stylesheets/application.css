@@ -1610,25 +1610,27 @@ div.flash.notice {
   display: table;
 }
 div.flash.notice:before {
-    content: "check";
-    font-family: "Material Icons";
-    font-size: 24px;
-    font-weight: 700;
-    position: absolute;
-    width: 2.5rem;
-    height: 100%;
-    line-height: 34px;
-    text-align: center;
-    left: 0px;
-    top: 0px;
-    background: #71c341;
-    color: #fff;
+  content: "check";
+  font-family: "Material Icons";
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  width: 2.5rem;
+  height: 100%;
+  line-height: 34px;
+  text-align: center;
+  background: #71c341;
+  color: #fff;
+  border: 1px solid #71c341;
+  border-width: 1px 0 1px 1px;
+  left: -1px;
+  top: -1px;
 }
 
 div.flash.warning, .conflict {
   color: #000;
   background-image: none;
-  border: 2px solid goldenrod;
+  border: 2px solid #daa520;
   background: #fff;
   position: relative;
   padding: .5rem 1rem .5rem 3.5rem;
@@ -1637,7 +1639,7 @@ div.flash.warning, .conflict {
 }
 
 .conflict {
-    border: 2px solid goldenrod;
+    border: 2px solid #daa520;
     padding: .5rem 1rem .5rem 3.5rem;
     font-weight: 500;
 }
@@ -1657,8 +1659,12 @@ div.flash.warning:before, .conflict:before {
     text-align: center;
     left: 0px;
     top: 0px;
-    background: goldenrod;
+    background: #daa520;
     color: #fff;
+    border: 1px solid #daa520;
+    border-width: 1px 0 1px 1px;
+    left: -1px;
+    top: -1px;
 }
 
 .nodata, .warning {
