@@ -1600,9 +1600,6 @@ div.flash.error, #errorExplanation {
 }
 
 div.flash.notice {
-  background: url(../images/true.png) 8px 5px no-repeat;
-  background-color: #dfffdf;
-  border-color: #9fcf9f;
   color: #000;
   background-image: none;
   border: 2px solid #71c341;
@@ -1629,11 +1626,39 @@ div.flash.notice:before {
 }
 
 div.flash.warning, .conflict {
-  background: url(../images/warning.png) 8px 5px no-repeat;
-  background-color: #F3EDD1;
-  border-color: #eadbbc;
-  color: #A6750C;
-  text-align: left;
+  color: #000;
+  background-image: none;
+  border: 2px solid goldenrod;
+  background: #fff;
+  position: relative;
+  padding: .5rem 1rem .5rem 3.5rem;
+  font-weight: 500;
+  display: table;
+}
+
+.conflict {
+    border: 2px solid goldenrod;
+    padding: .5rem 1rem .5rem 3.5rem;
+    font-weight: 500;
+}
+.conflict .conflict-details {
+  font-weight: normal;
+}
+
+div.flash.warning:before, .conflict:before {
+    content: "warning";
+    font-family: "Material Icons";
+    font-size: 24px;
+    font-weight: normal;
+    position: absolute;
+    width: 2.5rem;
+    height: 100%;
+    line-height: 34px;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    background: goldenrod;
+    color: #fff;
 }
 
 .nodata, .warning {
