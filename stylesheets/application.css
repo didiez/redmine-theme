@@ -875,11 +875,11 @@ fieldset#date-range p { margin: 2px 0 2px 0; }
 fieldset#filters table { border-collapse: collapse; }
 fieldset#filters table td { padding: 0; vertical-align: middle; }
 fieldset#filters tr.filter {height: 2.3em;}
-fieldset#filters td.field {/* width:230px; */white-space: nowrap;}
-fieldset#filters td.operator { width:130px; }
-fieldset#filters td.operator select {max-width:120px;}
-fieldset#filters td.values {white-space:nowrap;}
-fieldset#filters td.values select {min-width:130px;}
+fieldset#filters td.field {width:230px;white-space: nowrap;}
+fieldset#filters td.operator {width:130px;padding-right: .1rem;}
+fieldset#filters td.operator select {/* max-width:120px; */min-width: 70px;width: 100%;margin-right: .5rem;}
+fieldset#filters td.values {white-space:nowrap;padding-right: 1.7rem;}
+fieldset#filters td.values select {min-width:130px;width: 100%;}
 
 #filters-table {width:60%;/* float:left; */}
 .add-filter {/* width:35%; *//* position: absolute; */text-align: right;flex: 1;/* margin-top: -.5em; */min-height: 2.75rem;}
