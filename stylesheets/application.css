@@ -974,7 +974,7 @@ div.journal.changeset {
 }
 
 div.journal.private-notes {border-left:2px solid #d22; padding-left:4px; margin-left:-6px;}
-div.journal h4.note-header, div.journal.time_entry > h4, div.journal.changeset > h4 {border-bottom: none;font-size: 0;padding: 1rem 1rem 0 .8rem;margin-bottom: 1rem;position: relative;height: 2rem;display: flex;flex-direction: column;white-space: nowrap;}
+div.journal h4.note-header, div.journal.time_entry > h4, div.journal.changeset > h4 {border-bottom: none;font-size: 0;padding: 1rem 1rem 0 .8rem;margin-bottom: 1rem;position: relative;height: 3rem;display: flex;flex-direction: column;white-space: nowrap;box-sizing: border-box;}
 div.journal h4.note-header > a, div.journal.time_entry > h4 > a, div.journal.changeset > h4 > a {font-size: .8rem;/* margin-right: .5rem; */display: table;}
 div.journal > div > h4 > a:last-of-type,  div.journal.changeset > h4 > a:last-of-type {/* position: absolute; *//* left: 3.2rem; *//* top: 2rem; *//* font-weight: normal; *//* font-size: .8rem; */font-size: .7rem;}
 div.journal > div > h4 > a:last-of-type, div.journal.changeset > h4 > a:last-of-type:before {content:"hace "}
@@ -2407,7 +2407,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 }
 
 h2 img.gravatar, h3 img.gravatar {margin-right: 4px;}
-h4 img.gravatar {/* margin: -2px 4px -4px 0; */height: 24px;width: 24px;}
+h4 img.gravatar {/* margin: -2px 4px -4px 0; */height: 34px;width: 34px;box-sizing: border-box;}
 td.username img.gravatar {margin: 0 0.5em 0 0; vertical-align: top;}
 #activity dt img.gravatar {float: left;margin: 0 1rem 1rem 0;margin-left: 1rem;height: 36px;width: 36px;box-sizing: border-box;position: relative;}
 /* para mostrar un placeholder del avatar cuando no tiene o no es un usuario conocido */
