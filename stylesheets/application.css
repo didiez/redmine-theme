@@ -1071,7 +1071,7 @@ div#activity dd.grouped + dt:not(.grouped) {margin-top: 2em}
 }
 .controller-search #search-results dt, .controller-search #search-results dd {padding-left: 2.5rem;}
 div#activity dt span.project, dt span.project + a {
-  margin-left: 1rem;
+  /*margin-left: 1rem;*/
   display: block;
 }
 body.avatars-on div#activity dt > span.project, body.avatars-on div#activity dt > a {
