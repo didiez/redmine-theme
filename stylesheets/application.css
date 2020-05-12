@@ -984,7 +984,7 @@ div.journal img.gravatar {box-shadow: none; border: none;}
 div.journal ul.details {border-radius: 3px;margin: 0 0 1rem 1rem;padding: .5rem .6rem;margin-left: 1rem;list-style: none;display: table;background: #f1f1f1;}
 div.journal ul.details li {line-height: 1.4;}
 div.journal ul.details li > * {}
-div.journal div.wiki {padding: 0 1rem 1rem;/* position: relative; */overflow: visible;margin-top: 1rem;padding-right: 3rem;line-height: 1.5;}
+div.journal div.wiki {padding: 0 1rem 1rem;/* position: relative; */overflow: auto;margin-top: 1rem;padding-right: 3rem;line-height: 1.5;}
 div.journal div.wiki .contextual {top: 2.5rem;right: 2em;width: 1rem;white-space: normal;}
 div.journal div.wiki .contextual a {
     display: block;
