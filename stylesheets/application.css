@@ -852,9 +852,10 @@ div.issue p.author {margin-top:0.5em;}
 div.issue span.private, div.journal span.private {font-size: 60%;}
 div.issue .next-prev-links {color:#999;}
 div.issue .attributes {margin-top: 2em;}
-div.issue .attributes .attribute {padding-left:180px; clear:left; min-height: 1.6rem;}
-div.issue .attributes .attribute .label {width: 170px; margin-left:-180px; font-weight:bold; float:left;  overflow:hidden; text-overflow: ellipsis;}
-div.issue .attribute .value {overflow:auto; text-overflow: ellipsis;}
+div.issue .attributes .splitcontent {max-width: 700px}
+div.issue .attributes .attribute {/* padding-left:180px; */clear:left;min-height: 1.7rem;display: flex;align-items: center;}
+div.issue .attributes .attribute .label {width: 130px;/* margin-left:-180px; */font-weight:bold;float:left;overflow:hidden;text-overflow: ellipsis;}
+div.issue .attribute .value {overflow:auto;text-overflow: ellipsis;display: flex;}
 div.issue.overdue .due-date .value { color: #c22; }
 
 #issue_tree table.issues, #relations table.issues {border: 0;box-shadow: none;margin-bottom: .5em;}
@@ -875,7 +876,7 @@ fieldset#date-range p { margin: 2px 0 2px 0; }
 fieldset#filters table { border-collapse: collapse; }
 fieldset#filters table td { padding: 0; vertical-align: middle; }
 fieldset#filters tr.filter {height: 2.3em;}
-fieldset#filters td.field {width:150px;white-space: nowrap;}
+fieldset#filters td.field {width: 150px;white-space: nowrap;}
 fieldset#filters td.operator {width:130px;padding-right: .1rem;}
 fieldset#filters td.operator select {/* max-width:120px; */min-width: 70px;width: 100%;margin-right: .5rem;}
 fieldset#filters td.values {white-space:nowrap;padding-right: 1.7rem;}
@@ -1778,7 +1779,7 @@ table.progress td {height: 12px;padding: 0;border: 0;}
 table.progress td.closed { background: #BAE0BA none repeat scroll 0%; }
 table.progress td.done { background: #D3EDD3 none repeat scroll 0%; }
 table.progress td.todo {background: rgba(0,0,0,.08) none repeat scroll 0%;}
-p.percent {font-size: 80%; margin:0;}
+p.percent {font-size: 80%;margin:0;line-height: 14px;font-family: "Roboto Mono";}
 p.progress-info {clear: left; font-size: 80%; margin-top:-4px; color:#777;}
 
 .version-overview table.progress {width:40em;}
