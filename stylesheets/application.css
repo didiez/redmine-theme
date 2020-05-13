@@ -854,6 +854,7 @@ div.issue span.private, div.journal span.private {font-size: 60%;}
 div.issue .next-prev-links {color:#999;}
 div.issue .attributes {margin-top: 2em;}
 div.issue .attributes .splitcontent {max-width: 700px}
+div.issue .attributes .splitcontent .splitcontentleft {margin-right: 1rem}
 div.issue .attributes .attribute {/* padding-left:180px; */clear:left;min-height: 1.7rem;display: flex;align-items: center;}
 div.issue .attributes .attribute .label {width: 130px;/* margin-left:-180px; */font-weight:bold;float:left;overflow:hidden;text-overflow: ellipsis;}
 div.issue .attribute .value {overflow:auto;text-overflow: ellipsis;display: flex;}
