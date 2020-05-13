@@ -481,6 +481,9 @@ table.issue-report th, table.issue-report td {text-align: right;}
 .members > h3.icon-group {background-image: none;line-height: 24px;padding-left: 2rem;}
 .members > h3.icon-group:before {content:"people";font-family:"Material Icons";font-size: 24px;line-height: 24px;position: absolute;left: 0;top: 0;}
 
+.projects > h3.icon-projects {background-image: none;line-height: 24px;padding-left: 2rem;}
+.projects > h3.icon-projects:before {content:"folder_open";font-family:"Material Icons";font-size: 24px;line-height: 24px;position: absolute;left: 0;top: 0;}
+
 tr.entry { border: 1px solid #f8f8f8; }
 tr.entry td { white-space: nowrap; }
 tr.entry td.filename {width:30%; text-align:left;}
