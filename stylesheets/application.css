@@ -470,7 +470,7 @@ tr.issue.idnt-9 td.subject, tr.project.idnt-9 td.name {padding-left: 152px; back
 .issues > h3 {display: flex;align-items: center;padding-left: 2rem;}
 .issues > h3.icon-issue:after {content: "";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMsNlYyMkgyMVYyNEgzQTIsMiAwIDAsMSAxLDIyVjZIM00xNiw5SDIxLjVMMTYsMy41VjlNNywySDE3TDIzLDhWMThBMiwyIDAgMCwxIDIxLDIwSDdDNS44OSwyMCA1LDE5LjEgNSwxOFY0QTIsMiAwIDAsMSA3LDJNNyw0VjE4SDIxVjExSDE0VjRIN1oiLz48L3N2Zz4=");height: 24px;width: 24px;position: absolute;left: 0;top: -1px;}
 .issues > h3.icon-issue:before {content:"";background-color: #fbd249;height: 18px;width: 18px;position: absolute;left: 5px;top: 1px;border-radius: 2px 10px 2px 2px;}
-.issues .icon-zoom-in:before {content: "bar_chart";font-family:"Material Icons";font-size: 20px;font-weight: normal;line-height: 24px;}
+.issues .icon-zoom-in:before {content: "bar_chart";font-family:"Material Icons";font-size: 24px;font-weight: normal;line-height: 24px;font-weight: normal;}
 table.issue-report {table-layout:fixed;}
 table.issue-report th, table.issue-report td {text-align: right;}
 .issue-report-graph {width: 75%; margin: 2em 0;}
@@ -2289,7 +2289,8 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .open .icon-folder { background-image: url(../images/folder_open.png); }
 .icon-package {background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUuMTIsNUgxOC44N0wxNy45Myw0SDUuOTNMNS4xMiw1TTIwLjU0LDUuMjNDMjAuODMsNS41NyAyMSw2IDIxLDYuNVYxOUEyLDIgMCAwLDEgMTksMjFINUEyLDIgMCAwLDEgMywxOVY2LjVDMyw2IDMuMTcsNS41NyAzLjQ2LDUuMjNMNC44NCwzLjU1QzUuMTIsMy4yMSA1LjUzLDMgNiwzSDE4QzE4LjQ3LDMgMTguODgsMy4yMSAxOS4xNSwzLjU1TDIwLjU0LDUuMjNNNiwxOEgxMlYxNUg2VjE4WiIvPjwvc3ZnPg==');font-size: 1em;}
 .icon-user {background-image: url(../images/user.png);}
-.icon-project, .icon-projects { background-image: url(../images/projects.png); }
+.icon-project, .icon-projects {position: relative;padding-left: 2rem;}
+.icon-project:before, .icon-projects:before {font-family:"Material Icons";content:"folder_open";font-size: 24px;font-weight: normal;position: absolute;left: 0;}
 .icon-help { background-image: url(../images/help.png); }
 .icon-attachment:before {font-family:"Material Icons";content:"attachment";font-size: 16px;position: absolute;margin-right: .2em;margin-left: -1.2rem;line-height: 16px;}
 .icon-history  { background-image: url(../images/history.png); }
