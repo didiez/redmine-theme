@@ -961,7 +961,7 @@ div.journal ul.details a.icon-download, ul.revision-info a.icon-download {height
 div.journal ul.details a.icon-download:before, ul.revision-info a.icon-download:before {content:"get_app"; font-family:"Material Icons"; font-size: 16px;}
 div.journal ul.details a:hover, ul.revision-info a:hover {color:#D14848;}
 body.avatars-on div.journal {padding-left: 0;}
-body.avatars-on div.journal h4 {padding-left: 3rem; width: 9rem;}
+body.avatars-on div.journal h4 {padding-left: 3rem; width: 13rem;}
 body.avatars-on div.journal h4 img.gravatar {margin-right: .5rem;position: absolute;margin-left: -2.4rem;margin-top: -2px;}
 div.journal h4 img.gravatar {margin-left: 0;}
 div.journal:not(.changeset) > div,
@@ -990,7 +990,7 @@ div.journal > div > h4 > a:last-of-type, div.journal.changeset > h4 > a:last-of-
 div.journal > div > h4 > a:last-of-type:before {content: "hace ";}
 div.journal > div > h4 > a.journal-link {font-family: "Roboto Mono";font-size: .9rem;margin-right: 0.2em;font-weight: 700;/* font-size: 16px; */}
 div.journal img.gravatar {box-shadow: none; border: none;}
-div.journal ul.details {border-radius: 3px;margin: 0 0 1rem 1rem;padding: .5rem .6rem;margin-left: 1rem;list-style: none;display: table;background: #f1f1f1;}
+div.journal ul.details {border-radius: 3px;margin: 0 1rem 1rem 1rem;padding: .5rem .6rem;margin-left: 1rem;list-style: none;display: table;background: #f1f1f1;}
 div.journal ul.details li {line-height: 1.4;}
 div.journal ul.details li > * {}
 div.journal div.wiki {padding: 0 1rem 1rem;/* position: relative; */overflow: auto;margin-top: 1rem;padding-right: 3rem;line-height: 1.5;}
@@ -1005,7 +1005,8 @@ div.journal div.wiki .contextual a img {display: none}
 div.journal div.wiki .contextual a[data-method="post"]:before {content:"format_quote";font-size: 20px;}
 div.journal div.wiki .contextual a[title="Modificar"]:before {content:"edit"; font-size: 20px}
 
-div.journal div.wiki p:last-child {margin-bottom:0;}
+div.journal div.wiki > p:first-child {margin-top:0;}
+div.journal div.wiki > p:last-child {margin-bottom:0;}
 
 #history {margin-bottom: 1rem;}
 #history .tab-content {
