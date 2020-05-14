@@ -741,7 +741,9 @@ div.square {
   overflow: hidden;
   width: .6em; height: .6em;
 }
-.news > p {display: block;}
+.news > p {display: table;padding: 1rem;background: #fff;border-radius: 3px;box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);}
+.news > p > span.comments {margin-left: .5rem;}
+.news > p > span.author {margin-top: .5rem; display: block; font-size: .9em;}
 .members > p > a {}
 
 html>body #content > .contextual {position: relative;float: right;/* padding: .5rem 0; */font-size: 1em;display: inline-flex;right: 1rem;align-items: center;}
@@ -817,7 +819,7 @@ blockquote {position: relative;font-style: italic;padding-left: 1em;margin-left:
 blockquote blockquote { margin-left: 0;}
 blockquote > *:first-child {margin-top: .5rem !important;}
 blockquote > *:last-child {margin-bottom: .5rem !important;}
-abbr, span.field-description[title] { border-bottom: 1px dotted #aaa; cursor: help; }
+abbr, span.field-description[title] {text-decoration: underline dotted; cursor: help; }
 textarea.wiki-edit {width: 100%;resize:vertical;box-sizing: border-box;padding: .5rem;margin-bottom: .3rem !important;line-height: 1.5;font-size: inherit;}
 body.textarea-monospace textarea.wiki-edit {font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace; font-size: 12px;}
 body.textarea-proportional textarea.wiki-edit {font-family: Verdana, sans-serif; font-size: 12px;}
@@ -869,7 +871,7 @@ div.issue .attributes .splitcontent {max-width: 700px}
 div.issue .attributes .splitcontent .splitcontentleft {margin-right: 1rem}
 div.issue .attributes .attribute {/* padding-left:180px; */clear:left;min-height: 1.7rem;display: flex;align-items: center;}
 div.issue .attributes .attribute .label {width: 130px;/* margin-left:-180px; */font-weight:bold;float:left;overflow:hidden;text-overflow: ellipsis;}
-div.issue .attribute .value {overflow:auto;text-overflow: ellipsis;display: flex;}
+div.issue .attribute .value {overflow:auto;text-overflow: ellipsis;display: flex;align-items: center;}
 div.issue.overdue .due-date .value { color: #c22; }
 
 #issue_tree table.issues, #relations table.issues {border: 0;box-shadow: none;margin-bottom: .5em;}
