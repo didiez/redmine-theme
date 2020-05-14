@@ -178,7 +178,7 @@ html>body.action-login #content div.flash.error + #login-form input[name=usernam
 html>body.action-login #content #errorExplanation {background: none;color: #d32f2f;font-weight: 500;padding: 0;margin: 0;border: 0;margin-bottom: 1rem;}
 
 @media(max-width: 600px) {
-  html>body.action-login #content:before {display: none;}
+  html>body.action-login #main:before {display: none;}
   html>body.action-login #content div.flash.error {left: 50%;}
 }
 
