@@ -223,7 +223,9 @@ a.user.locked, a.user.locked:link, a.user.locked:visited {color: #999;}
   color: #fff;
 }
 
-#admin-menu a {line-height:1.7em;}
+#admin-menu a {line-height: 1.8rem;display: inline-block;}
+#admin-menu a.icon {padding-left: 1.5rem;}
+#admin-menu a.icon:before {height: 1.8rem;width: 1.8rem;font-size: 18px;text-align: left;line-height: 1.8rem;margin: 0;padding: 0;position: absolute;left: 0;top: 0;}
 #admin-menu a.selected {padding-left: 20px !important; background-position: 2px 40%;}
 
 a.collapsible {padding-left: 12px; }
@@ -1262,6 +1264,10 @@ ul.projects div.description li {list-style-type:initial;}
 
 #projects-index ul.projects a.project.parent:after {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyLDRBMiwyIDAgMCwxIDI0LDZWMTZBMiwyIDAgMCwxIDIyLDE4SDZBMiwyIDAgMCwxIDQsMTZWNEEyLDIgMCAwLDEgNiwySDEyTDE0LDRIMjJNMiw2VjIwSDIwVjIySDJBMiwyIDAgMCwxIDAsMjBWMTFIMFY2SDJNNiw2VjE2SDIyVjZINloiLz48L3N2Zz4=");height: 24px;width: 24px;display: inline-block;position: absolute;left: -2px;top: 2px;background-color: inherit;z-index: 1;}
 
+#projects-index ul.projects li.child:first-child {margin-top: 0;padding-top: .5em;}
+#projects-index ul.projects li.child:first-child:after {top: .5em;}
+#projects-index ul.projects a.project + .wiki p {margin-left: 2rem;}
+#projects-index ul.projects a.project.parent + .wiki p {border-left: 2px solid #000; padding-left: 1.275rem; margin-left: .6rem;}
 
 #projects-index ul.projects a.project.parent.my-project:before {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1IDE0QzE2LjMzIDE0IDE5IDE0LjY3IDE5IDE2VjE3SDExVjE2QzExIDE0LjY3IDEzLjY3IDE0IDE1IDE0TTE1IDEzQzE2LjExIDEzIDE3IDEyLjExIDE3IDExUzE2LjExIDkgMTUgOUMxMy45IDkgMTMgOS44OSAxMyAxMUMxMyAxMi4xMSAxMy45IDEzIDE1IDEzTTIyIDhWMThDMjIgMTkuMTEgMjEuMTEgMjAgMjAgMjBINEMyLjkgMjAgMiAxOS4xMSAyIDE4VjZDMiA0Ljg5IDIuOSA0IDQgNEgxMEwxMiA2SDIwQzIxLjExIDYgMjIgNi45IDIyIDhNMjAgOEg0VjE4SDIwVjhaIi8+PC9zdmc+");height: 24px;width: 24px;display: inline-block;position: absolute;left: 0;z-index: 2;}
 #projects-index ul.projects li.child:after {content:"";background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE5LDEzSDVWMTFIMTlWMTNaIi8+PC9zdmc+");height: 24px;width: 24px;display: inline-block;position: absolute;left: -1rem;top: 0;}
@@ -1564,6 +1570,7 @@ select.bool_cf {width:auto !important;}
 #tab-content-users #principals {max-height: 400px; overflow: auto;}
 
 #users_for_watcher {height: 200px; overflow:auto;}
+#users_for_watcher .icon-user {width: 18px;}
 #users_for_watcher label {line-height: 1.5rem;display: flex; align-items: center;}
 #users_for_watcher input[type="checkbox"] {margin-right: .5rem;}
 
@@ -2304,7 +2311,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-folder { background-image: url(../images/folder.png); }
 .open .icon-folder { background-image: url(../images/folder_open.png); }
 .icon-package {background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUuMTIsNUgxOC44N0wxNy45Myw0SDUuOTNMNS4xMiw1TTIwLjU0LDUuMjNDMjAuODMsNS41NyAyMSw2IDIxLDYuNVYxOUEyLDIgMCAwLDEgMTksMjFINUEyLDIgMCAwLDEgMywxOVY2LjVDMyw2IDMuMTcsNS41NyAzLjQ2LDUuMjNMNC44NCwzLjU1QzUuMTIsMy4yMSA1LjUzLDMgNiwzSDE4QzE4LjQ3LDMgMTguODgsMy4yMSAxOS4xNSwzLjU1TDIwLjU0LDUuMjNNNiwxOEgxMlYxNUg2VjE4WiIvPjwvc3ZnPg==');font-size: 1em;}
-.icon-user {background: none;position: relative;height: 18px;width: 18px;padding: 0;}
+.icon-user {background: none;position: relative;height: 18px; padding: 0;}
 .icon-user:before {content: "person";font-family:"Material Icons";position: absolute;left: 0;top: 0;height: 18px;width: 18px;line-height: 18px;}
 .icon-project, .icon-projects {position: relative;padding-left: 2rem;}
 .icon-project:before, .icon-projects:before {font-family:"Material Icons";content:"folder_open";font-size: 24px;font-weight: normal;position: absolute;left: 0;}
