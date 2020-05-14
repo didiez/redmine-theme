@@ -2353,7 +2353,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-issue-note {}
 .icon-message { background-image: url(../images/message.png); }
 .icon-reply { background-image: url(../images/comments.png); }
-.icon-wiki-page { background-image: url(../images/wiki_edit.png); }
+.icon-wiki-page {}
 .icon-document { background-image: url(../images/document.png); }
 .icon-project { background-image: url(../images/projects.png); }
 .icon-add-bullet { background-image: url(../images/bullet_add.png); }
