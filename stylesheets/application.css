@@ -2301,7 +2301,7 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-move { background-image: url(../images/move.png); }
 .icon-save:before {font-family:"Material Icons";content:"save";font-size: 1.4em;position: absolute;margin-left: -1.1em;top: 0;font-weight: 700;margin-top: -1px;}
 .icon-download {position: relative;}
-.icon-download:before {font-family:"Material Icons";content: "get_app";font-size: 1.4em;position: absolute;/* margin-left: -1.1em; */top: 0;font-weight: 700;margin-top: -1px;left: 0;height: 1.4rem;width: 1.4rem;display: block;}
+.icon-download:before {font-family:"Material Icons";content: "get_app";font-size: 1.4em;position: absolute;/* margin-left: -1.1em; */top: 0;font-weight: 700;margin-top: -1px;left: 0;height: 1.4rem;line-height: 1.4rem;width: 1.4rem;display: block;}
 .icon-cancel { background-image: url(../images/cancel.png); }
 .icon-multiple { background-image: url(../images/table_multiple.png); }
 .icon-folder { background-image: url(../images/folder.png); }
