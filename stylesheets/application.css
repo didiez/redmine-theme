@@ -2006,6 +2006,7 @@ div.wiki pre > code.js:before, div.wiki pre > code.javascript:before {content: "
 div.wiki pre > code.html:before {content: "html";}
 div.wiki pre > code.python:before {content: "python";}
 div.wiki pre > code.sql:before {content: "sql";}
+div.wiki pre > code.xml:before {content: "xml";}
 
 div.wiki pre.dark, 
 div.wiki pre.dark > code {
