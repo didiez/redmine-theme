@@ -511,7 +511,7 @@ tr.entry td.age { text-align: right; }
 tr.entry.file td.filename a { margin-left: 16px; }
 tr.entry.file td.filename_no_report a { margin-left: 16px; }
 
-tr span.expander, .gantt_subjects div > span.expander {background-position: 2px 50%;padding-left: 8px;margin-left: 8px;cursor: pointer;margin-right: 8px;}
+tr span.expander, .gantt_subjects div > span.expander {background-position: 2px 50%;padding-left: 8px;/* margin-left: 8px; */cursor: pointer;margin-right: 8px;}
 .gantt_subjects div > span.expander {padding-left: 12px;}
 .gantt_subjects div > span .icon-gravatar {float: none;}
 
