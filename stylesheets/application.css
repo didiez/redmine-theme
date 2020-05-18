@@ -123,13 +123,15 @@ body:not([class*="project-"]) #header h1 {
 
 #main {flex-grow: 2;display: flex;flex-direction: row-reverse;background-color: inherit;}
 
-#sidebar{flex-shrink: 0;padding-left: 1rem;}
-@media screen and (min-width: 0px) and (max-width: 1089px) {#sidebar{width: 22%;}}
+#sidebar{flex-shrink: 0;padding-left: 1rem; width: 220px;}
+@media screen and (min-width: 0px) and (max-width: 1089px) {#sidebar{padding-left: 0;}}
+/*
 @media screen and (min-width: 1090px) and (max-width: 1279px) {#sidebar{width: 240px;}}
 @media screen and (min-width: 1280px) and (max-width: 1599px) {#sidebar{width: 280px;}}
 @media screen and (min-width: 1600px) and (max-width: 1919px) {#sidebar{width: 320px;}}
 @media screen and (min-width: 1920px) and (max-width: 2559px) {#sidebar{width: 360px;}}
 @media screen and (min-width: 2560px) {#sidebar{width: 380px;}}
+*/
 #sidebar h3{ font-size: 14px; margin-top:14px; color: #666;  }
 #sidebar hr{ width: 100%; margin: 0 auto; height: 1px; background: #ccc; border: 0; }
 * html #sidebar hr{ width: 95%; position: relative; left: -6px; color: #ccc; }
@@ -345,7 +347,9 @@ table.list.projects thead th {text-align: left;}
 
 table.list td.attachments a {display:block;}
 table.list td.tick {width:15%}
-table.list th.checkbox, table.list td.checkbox {width: 15px; padding-left: 1rem;}
+table.list th.checkbox, table.list td.checkbox {width: 15px;}
+table.list th:first-child, table.list td:first-child {padding-left: 1rem;}
+table.list th:last-child, table.list td:last-child {padding-right: 1rem;}
 table.list .checkbox input {padding:0px;}
 table.list td.buttons {padding: 0 1rem;}
 table.list td.buttons, div.buttons {white-space:nowrap;width: 1px;margin: 0;vertical-align: middle;}
@@ -744,7 +748,7 @@ div.square {
   overflow: hidden;
   width: .6em; height: .6em;
 }
-.news > p {display: table;padding: 1rem;background: #fff;border-radius: 3px;box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);}
+.news > p:not(:last-child) {display: table;padding: 1rem;background: #fff;border-radius: 3px;box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);}
 .news > p > span.comments {margin-left: .5rem;}
 .news > p > span.author {margin-top: .5rem; display: block; font-size: .9em;}
 .members > p > a {}
