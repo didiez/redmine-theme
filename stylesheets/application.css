@@ -125,6 +125,7 @@ body:not([class*="project-"]) #header h1 {
 
 #sidebar{flex-shrink: 0;padding-left: 1rem; width: 220px;}
 @media screen and (min-width: 0px) and (max-width: 1089px) {#sidebar{padding-left: 0;}}
+@media screen and (min-width: 1600px) {#sidebar{width: 300px;}}
 /*
 @media screen and (min-width: 1090px) and (max-width: 1279px) {#sidebar{width: 240px;}}
 @media screen and (min-width: 1280px) and (max-width: 1599px) {#sidebar{width: 280px;}}
@@ -2117,6 +2118,7 @@ div.wiki img {vertical-align:middle; max-width:100%;}
 .handle {cursor: move;}
 
 #my-page .list th.checkbox, #my-page .list td.checkbox {display:none;}
+#my-page .list th.id, #my-page .list td.id {padding-left: 1rem;}
 /***** Gantt chart *****/
 table.gantt-table {
   width: 100%;
