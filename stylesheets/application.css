@@ -343,7 +343,7 @@ table.list td {vertical-align: middle;padding: .8rem .5rem;border: 0;}
 table.list td.id {width: 2%;text-align: center;font-family: "Roboto Mono";}
 table.list td.id > a { display: block; line-height: 1.2;}
 table.list td.name, table.list td.description, table.list td.subject, table.list td.comments, table.list td.roles, table.list td.attachments, table.list td.text,  table.list td.short_description {text-align: left;}
-table.list th.status, table.list td.status {text-align: left;}
+table.list th.status, table.list td.status {text-align: left; width: 1px; white-space: nowrap;} /* para forzar fit-content */
 table.list.projects thead th {text-align: left;}
 
 table.list td.attachments a {display:block;}
@@ -378,12 +378,15 @@ table.list table.progress td {padding: 0 !important;}
 table.list caption { text-align: left; padding: 0.5em 0.5em 0.5em 0; }
 table.list tr.overdue td.due_date  { color: #c22; }
 #role-permissions-trackers table.list th {white-space:normal;}
-table.list th.project, table.list td.project {width: 1px;/* white-space: normal; */} /* para forzar fit-content */
+table.list th.project, table.list td.project {width: 1px;/* white-space: normal; *//* padding-top: .2rem; *//* padding-bottom: .2rem; */}
+table.list th.updated_on, table.list td.updated_on {width: 1px;/* white-space: normal; *//* padding-top: .2rem; *//* padding-bottom: .2rem; */}
+table.list td.updated_on {/* font-family: "Roboto Mono", monospace; *//* font-size: .9em; */}
 table.list th.tracker, table.list td.tracker {width: 1px; white-space: nowrap;} /* para forzar fit-content */
 table.list th.priority, table.list td.priority {width: 1px; white-space: nowrap;} /* para forzar fit-content */
 table.list th.done_ratio, table.list td.done_ratio {width: 1px; white-space: nowrap;} /* para forzar fit-content */
-table.list th.assigned_to, table.list td.assigned_to,
-table.list th.author, table.list td.author {width: 1px;white-space: nowrap;max-width: 120px;overflow: hidden;text-overflow: ellipsis;} /* para forzar fit-content o max-width+ellipsis*/
+table.list th.assigned_to, table.list th.author {width: 1px; white-space: nowrap;}
+table.list td.assigned_to, table.list td.author {width: 1px;white-space: normal; padding-top: .2rem; padding-bottom: .2rem;}
+table.list td.priority,div.issue .attribute.priority .value {position: relative;font-weight: 500;line-height: 1.2;}
 
 table.list td.priority,div.issue .attribute.priority .value {position: relative;font-weight: 500;line-height: 1.2;}
 table.list td.priority:before, div.issue .attribute.priority .value:before {content:"";width: 80%;height: 1.7rem;background-color: rgba(0,0,0,.08);display: inline-block;position: absolute;z-index: 0;margin-top: -.35rem;left: 10%;border-radius: 3px;box-sizing: border-box;}
