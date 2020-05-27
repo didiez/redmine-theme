@@ -2008,7 +2008,7 @@ div.wiki pre > code {
 
 /* language label top-right corner */
 div.wiki pre > code.syntaxhl:before {
-  position: absolute;top: 0px;right: 0px;padding: .2rem .4rem;background-color: rgba(0,0,0, .12);font-weight: bold;}
+  position: absolute;top: 0px;right: 0px;padding: .2rem .4rem;background-color: rgba(0,0,0, .12);font-weight: bold;
 }
 div.wiki pre > code.java:before {content: "java";}
 div.wiki pre > code.json:before {content: "json";}
