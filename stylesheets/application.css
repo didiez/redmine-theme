@@ -2575,11 +2575,9 @@ img.filecontent.image {background-image: url(../images/transparent.png);}
 .syntaxhl .il { color: #1C01CE } /* Literal.Number.Integer.Long */
 
 /* special highlighting for diff/patch */
-.syntaxhl.diff, .syntaxhl.patch {color: #000; line-height: 18px;}
-.syntaxhl.diff > *, .syntaxhl.patch > * { display: table;}
-.syntaxhl.diff > .p, .syntaxhl.patch > .p {display: inline-block;}
+.syntaxhl.diff, .syntaxhl.patch {color: #000; }
 .syntaxhl.diff .gd, .syntaxhl.patch .gd { background-color: #fcc; color: #000; }
-.syntaxhl.diff .gi, .syntaxhl.patch .gi { background-color: #cfc; color: #000;}
+.syntaxhl.diff .gi, .syntaxhl.patch .gi { background-color: #cfc; color: #000; }
 
 
 /***** Media print specific styles *****/
