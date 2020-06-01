@@ -2513,6 +2513,16 @@ img.filecontent.image {background-image: url(../images/transparent.png);}
 .syntaxhl .cpf { color: #177500 } /* Comment.PreprocFile */
 .syntaxhl .c1 { color: #177500 } /* Comment.Single */
 .syntaxhl .cs { color: #177500 } /* Comment.Special */
+.syntaxhl .gd { color: #A00000 } /* Generic.Deleted */
+.syntaxhl .ge { font-style: italic } /* Generic.Emph */
+.syntaxhl .gr { color: #FF0000 } /* Generic.Error */
+.syntaxhl .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.syntaxhl .gi { color: #00A000 } /* Generic.Inserted */
+.syntaxhl .go { color: #888888 } /* Generic.Output */
+.syntaxhl .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.syntaxhl .gs { font-weight: bold } /* Generic.Strong */
+.syntaxhl .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.syntaxhl .gt { color: #0044DD } /* Generic.Traceback */
 .syntaxhl .kc { color: #A90D91 } /* Keyword.Constant */
 .syntaxhl .kd { color: #A90D91 } /* Keyword.Declaration */
 .syntaxhl .kn { color: #A90D91 } /* Keyword.Namespace */
@@ -2537,6 +2547,7 @@ img.filecontent.image {background-image: url(../images/transparent.png);}
 .syntaxhl .nt { color: #000000 } /* Name.Tag */
 .syntaxhl .nv { color: #000000 } /* Name.Variable */
 .syntaxhl .ow { color: #000000 } /* Operator.Word */
+.syntaxhl .w { color: #bbbbbb } /* Text.Whitespace */
 .syntaxhl .mb { color: #1C01CE } /* Literal.Number.Bin */
 .syntaxhl .mf { color: #1C01CE } /* Literal.Number.Float */
 .syntaxhl .mh { color: #1C01CE } /* Literal.Number.Hex */
@@ -2562,6 +2573,14 @@ img.filecontent.image {background-image: url(../images/transparent.png);}
 .syntaxhl .vi { color: #000000 } /* Name.Variable.Instance */
 .syntaxhl .vm { color: #000000 } /* Name.Variable.Magic */
 .syntaxhl .il { color: #1C01CE } /* Literal.Number.Integer.Long */
+
+/* special highlighting for diff/patch */
+.syntaxhl.diff, .syntaxhl.patch {color: #000; line-height: 18px;}
+.syntaxhl.diff > *, .syntaxhl.patch > * { display: table;}
+.syntaxhl.diff > .p, .syntaxhl.patch > .p {display: inline-block;}
+.syntaxhl.diff .gd, .syntaxhl.patch .gd { background-color: #fcc; color: #000; }
+.syntaxhl.diff .gi, .syntaxhl.patch .gi { background-color: #cfc; color: #000;}
+
 
 /***** Media print specific styles *****/
 @media print {
