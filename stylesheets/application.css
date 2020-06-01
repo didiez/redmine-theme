@@ -2017,6 +2017,10 @@ div.wiki pre > code.html:before {content: "html";}
 div.wiki pre > code.python:before {content: "python";}
 div.wiki pre > code.sql:before {content: "sql";}
 div.wiki pre > code.xml:before {content: "xml";}
+div.wiki pre > code.diff:before {content: "diff";}
+div.wiki pre > code.patch:before {content: "patch";}
+div.wiki pre > code.terminal:before {content: "terminal";}
+div.wiki pre > code.console:before {content: "console";}
 
 div.wiki pre.dark, 
 div.wiki pre.dark > code {
