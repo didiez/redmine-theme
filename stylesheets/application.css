@@ -16,7 +16,7 @@ code {
     font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
     font-size: .95em;
     border-radius: 4px;
-    line-height: 1.2em;
+    line-height: 1rem;
     display: inline-block;
     font-style: normal;
 }
@@ -1152,6 +1152,18 @@ span.project {
   border-radius: 5px;
 }
 
+.controller-repositories #content > #related-issues ul li {
+  display: flex;
+  align-items: center;
+}
+.controller-repositories #content > #related-issues ul li .icon-link-break {margin-left: .5rem;}
+.controller-repositories #content > #related-issues ul li:before {
+  content: "•";
+  font-size: 1.5rem;
+  margin-right: .5rem;
+  line-height: 1rem;
+}
+
 #search-results dd { margin-bottom: 1em; padding-left: 20px; margin-left:0px; }
 
 div#search-results-counts {float:right;}
@@ -1994,6 +2006,7 @@ div.wiki ul, div.wiki ol {margin-top: 0; margin-bottom:1em;}
 div.wiki li>ul, div.wiki li>ol {margin-bottom: 0;}
 
 div.wiki pre {
+  line-height: 1rem;
   margin: 1em 1em 1em 1em;
   padding: 8px;
   background-color: #fdfdfd;
@@ -2359,7 +2372,8 @@ td.gantt_selected_column .gantt_hdr,.gantt_selected_column_container {
 .icon-email-add {/* background-image: url(../images/email_add.png); */}
 .icon-ok { background-image: url(../images/true.png); }
 .icon-not-ok { background-image: url(../images/false.png); }
-.icon-link-break { background-image: url(../images/link_break.png); }
+.icon-link-break {}
+.icon-link-break:before {content:"link_off";font-family:"Material Icons";font-size: 24px;width: 24px;line-height: 24px;}
 .icon-list { background-image: url(../images/text_list_bullets.png); }
 .icon-close { background-image: url(../images/close.png); }
 .icon-close:hover { background-image: url(../images/close_hl.png); }
