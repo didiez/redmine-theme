@@ -2031,6 +2031,8 @@ div.wiki pre > code.js:before, div.wiki pre > code.javascript:before {content: "
 div.wiki pre > code.html:before {content: "html";}
 div.wiki pre > code.python:before {content: "python";}
 div.wiki pre > code.sql:before {content: "sql";}
+div.wiki pre > code.properties:before {content: "properties";}
+div.wiki pre > code.yml:before {content: "yml";}
 div.wiki pre > code.xml:before {content: "xml";}
 div.wiki pre > code.diff:before {content: "diff";}
 div.wiki pre > code.patch:before {content: "patch";}
