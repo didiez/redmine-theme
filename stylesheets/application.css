@@ -1152,6 +1152,14 @@ span.project {
   border-radius: 5px;
 }
 
+.controller-repositories #content > #related-issues {position: relative;}
+.controller-repositories #content > #related-issues h3 {display: inline;}
+.controller-repositories #content > #related-issues .contextual {
+  display: inline;
+  top: .2rem;
+  left: 12rem;
+}
+
 .controller-repositories #content > #related-issues ul li {
   display: flex;
   align-items: center;
