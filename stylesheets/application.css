@@ -2059,6 +2059,7 @@ div.wiki *:not(pre)>code, div.wiki>code {
   display: inline;
   padding: .2em .4em .1em .4em;
   border-radius: 3px;
+  font-size: .95em;
 }
 
 div.wiki ul.toc {
