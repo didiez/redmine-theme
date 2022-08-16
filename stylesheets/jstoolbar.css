@@ -129,6 +129,9 @@
 .jstb_img {
     background-image: url(../images/jstoolbar/bt_img.png);
 }
+.jstb_table {
+    background-image: url(../images/jstoolbar/bt_table.png);
+}
 .jstb_help {
     background-image: url(../images/help.png);
 }
