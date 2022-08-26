@@ -63,7 +63,7 @@ table.filecontent th.line-num a {
     color: inherit;
 }
 table.filecontent td.line-code {padding: 0 1ch;}
-table.filecontent td.line-code pre {
+table.filecontent td.line-code pre, table.filecontent td.line-code div {
     margin: 0px;
     white-space: pre-wrap;
     font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
