@@ -16,3 +16,9 @@ docker-compose up -d
 
 ### Projects
 ![projects page](screenshots/projects.png)
+
+### Project details
+![project page](screenshots/project.png)
+
+### Issues
+![Issues page](screenshots/issues.png)
